@@ -1,9 +1,10 @@
 {
   "release": "v0.2.0",
   "snapshot_date": "2026-10-08",
-  "scope": "Saved estimates, estimator draws/covariances, figure code, public study provenance, and writeup; no observation-level inputs",
+  "scope": "Saved estimates, estimator draws/covariances, figure code/assets, and public study provenance; no observation-level inputs or manuscript",
   "observation_level_data_included": false,
   "manuscript_pdf_withheld_pending_author_edits": true,
+  "manuscript_source_withheld_pending_author_edits": true,
   "files": [
     {
       "path": ".gitattributes",
@@ -12,8 +13,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 432,
-      "sha256": "ac9a5b762d61354b0bb7dc0421ea4c2e62d7190b23dec427bd93176dd183b3da"
+      "bytes": 449,
+      "sha256": "732b2346d577f9f2dd7ee2475d619757551057bbf0764c09451c5c7a3303d2a7"
     },
     {
       "path": "config/figures.json",
@@ -227,18 +228,13 @@
     },
     {
       "path": "docs/release_scope.md",
-      "bytes": 2486,
-      "sha256": "067109ce05ba49fc7aba4956a08990dda4d6bfa923e011eff21bfbccf5b51ec7"
+      "bytes": 2523,
+      "sha256": "f23498c0b5b56ab18197820d99fb599ae602134fb59b441f80474b74ac935d91"
     },
     {
       "path": "LICENSE.md",
-      "bytes": 388,
-      "sha256": "eb3f346b02a89c83822945d0bebfa0fa974c3b04d9441f7fd5636b1c6948fb19"
-    },
-    {
-      "path": "paper/did_reanalysis.tex",
-      "bytes": 29295,
-      "sha256": "1ea27c8e3251a7415019605021e22345474b560de94c07194d28c4e238b54237"
+      "bytes": 374,
+      "sha256": "c4f56e7b0731e252c178fd5083e1f557a6a42fe07782f473a96bdc1c67c77c1f"
     },
     {
       "path": "paper/figures/aligned_samples.pdf",
@@ -267,8 +263,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6611,
-      "sha256": "88209b8b5f324f46efaac2cd3be2ba63f0bc2b00c6f45126be8c753a717b20d6"
+      "bytes": 6195,
+      "sha256": "1a8d5356150f25d0c8c0d63b6ac302c838401d82199a053df166871952806a4f"
     },
     {
       "path": "reference/expected_summary.json",

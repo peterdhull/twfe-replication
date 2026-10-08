@@ -17,7 +17,7 @@ design diagnostics from observation-level source data.
 - Numeric estimator draws, block-level covariance matrices, and coordinate
   mappings, with the covariance boundaries stated explicitly.
 - Standalone Python code, pinned dependencies, policy configuration, tests,
-  and the anonymized writeup.
+  and standalone figure assets.
 
 ## Excluded
 
@@ -28,8 +28,9 @@ design diagnostics from observation-level source data.
   raw outcome arrays, and the private filesystem/source-file crosswalk.
 - Original filesystem paths, private download URLs or access tokens, and
   historical working-directory artifacts.
-- The compiled manuscript PDF, withheld pending the author's final edits.
-  Editable LaTeX and separate figure assets are included.
+- Draft manuscript LaTeX and the compiled manuscript PDF, withheld from the
+  current release pending the author's final edits. Separate figure assets
+  are included.
 
 Some inputs used upstream were author-supplied and are not cleared for online
 redistribution. They remain outside this repository. No claim that this release

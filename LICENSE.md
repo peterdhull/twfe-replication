@@ -1,7 +1,7 @@
-# Private review candidate
+# Licensing status
 
-No public software or data license has been assigned to this release candidate.
-Choose the project's license explicitly before publishing it. No rights to
+This repository is publicly accessible. No software or data reuse license has
+yet been assigned; a license will be selected explicitly. No rights to
 redistribute underlying third-party observation-level inputs are asserted.
 
 The dependency packages retain their respective licenses. They are installed

@@ -29,5 +29,6 @@ data/author_supplied/
 *.pem
 *.key
 
-# Author is making final edits; keep the manuscript PDF local until approved.
+# Author is making final edits; keep manuscript source and PDF local.
+paper/did_reanalysis.tex
 paper/did_reanalysis.pdf

@@ -7,7 +7,8 @@ estimation data** and does not re-estimate models from raw observations.
 
 Release snapshot: **8 October 2026**. Project repository:
 [peterdhull/twfe-replication](https://github.com/peterdhull/twfe-replication).
-This is a private review candidate; no public redistribution license is assigned.
+This is a public estimate-level replication repository; no software or data
+reuse license has yet been assigned.
 Version 0.2 adds pooled pre-treatment comparisons as separate figure points.
 
 ## Quick start
@@ -80,7 +81,7 @@ data/provenance/      study citations and source specification/coordinate labels
 src/didfigures/       standalone screening, summaries, and plotting
 tests/                numerical, covariance, and package checks
 docs/                 data dictionary, methods, and release boundaries
-paper/                anonymized writeup, LaTeX source, and figure assets
+paper/figures/        standalone figure assets (no manuscript source or PDF)
 reference/            frozen expected summaries and release validation
 outputs/              regenerated results (ignored by Git)
 ```
@@ -107,26 +108,20 @@ crosses and cannot be filled. No multiplicity adjustment is applied. The
 concentration screen is a design diagnostic, not a guarantee of valid inference.
 
 Stable study and specification IDs link numerical tables to the named public
-provenance in `data/provenance/`. The default figures and writeup retain their
+provenance in `data/provenance/`. The default figures retain their
 anonymized labels. Original files, private correspondence, local source paths,
 and private acquisition links are not included. Missing descriptive metadata
 are left blank rather than inferred.
 
-## Editing the writeup
+## Figure assets and manuscript status
 
-`paper/did_reanalysis.tex` is the compact editable source, preserving the
-author's edited text except necessary pre-comparison updates. Its short
-`\input{figures/baseline.pgf}` and `\input{figures/aligned_samples.pgf}` calls
-load the figure code from separate files. Compile twice with pdfLaTeX from
-`paper/`; keep the `figures/` folder beside the main file. Vector PDF copies
-are also included. An `AUTHOR CHECK` source comment flags the unchanged
-main-text wording about published SEs for the author to review.
-The compiled manuscript PDF is intentionally withheld from this repository
-while the author makes final edits; compiling the source creates it locally.
-Neither LaTeX nor Stata/R is needed to regenerate the Python figures.
+`paper/figures/` contains standalone PGF and vector PDF figure assets.
+The draft manuscript LaTeX and compiled manuscript PDF are withheld from the
+current release while the author makes final edits. Neither LaTeX nor Stata/R
+is needed to regenerate the Python figures.
 
 ## Licensing and publication status
 
-See [LICENSE.md](LICENSE.md). A public license and hosted release should be
-selected explicitly before publication. The absence of observation-level data
+See [LICENSE.md](LICENSE.md). Public visibility does not assign a software or
+data reuse license; that choice remains pending. The absence of observation-level data
 does not transfer ownership of any underlying third-party inputs.
