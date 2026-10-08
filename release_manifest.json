@@ -313,8 +313,8 @@
     },
     {
       "path": "tests/test_cli.py",
-      "bytes": 3838,
-      "sha256": "0245445a3b9b17f2a3c8e57e076cc7be29dd7b3064d5791cd8643cbc222fbf25"
+      "bytes": 3886,
+      "sha256": "382938144da5660bbf56ff95ee7a05fed5d16970308d6a21d5fb144b8940ffb9"
     },
     {
       "path": "tests/test_replication.py",

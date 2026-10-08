@@ -47,9 +47,10 @@ class CommandLineReplication(unittest.TestCase):
                     self.assertTrue(path.is_file())
                     self.assertGreater(path.stat().st_size, 1000)
                 svg = (destination / "twfe-se" / f"{family}_capped.svg").read_text(encoding="utf-8")
-                self.assertIn("CSA and BJS versus TWFE", svg)
+                self.assertNotIn("CSA and BJS versus TWFE", svg)
                 self.assertIn("TWFE SEs", svg)
                 self.assertIn("Significant + Reversal:", svg)
+                self.assertIn("Notes:", svg)
                 self.assertNotIn("Variant B:", svg)
                 self.assertNotIn("capped central zoom", svg)
                 for panel in report["figures"]["twfe-se"][family]["capped"]:
