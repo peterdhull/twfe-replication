@@ -238,23 +238,23 @@
     },
     {
       "path": "paper/figures/aligned_samples.pdf",
-      "bytes": 67761,
-      "sha256": "2fde3c7a4340d3dc9a0e7e702f7b7f834631065f8ff31173a474e1fda63b8cdc"
+      "bytes": 65973,
+      "sha256": "fb3342ebb8368b8c315f68e3e9400aafe4fc1a51c62e0f061b0dbeced887a969"
     },
     {
       "path": "paper/figures/aligned_samples.pgf",
-      "bytes": 3698904,
-      "sha256": "96bfe9c0a97711d67e13e663fea70fa562b113106666050f5188165ec5b7e693"
+      "bytes": 3643653,
+      "sha256": "34b65e8de08c05404dbe6da2aaf4983cf852aaf2350c732333a3ea625a92dc70"
     },
     {
       "path": "paper/figures/baseline.pdf",
-      "bytes": 68356,
-      "sha256": "742c7f88ddbd8a9fbdd5d5352a2e5dc53361a03e47ddcd78bf38e2bbe4b3eb02"
+      "bytes": 67614,
+      "sha256": "842c707635fb18ce22a39b2b2cd0fa1728330d687cd2f0c0f29e0ce7298f743f"
     },
     {
       "path": "paper/figures/baseline.pgf",
-      "bytes": 3603905,
-      "sha256": "b8f499bcb383d4de0a8e140863afb98a2211f41429a7553d20d94980e0284f07"
+      "bytes": 3578789,
+      "sha256": "53c20a624929017f9d0af92886304b4da9865de8c997fa670ddc090f2b452236"
     },
     {
       "path": "pyproject.toml",
@@ -263,8 +263,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6195,
-      "sha256": "1a8d5356150f25d0c8c0d63b6ac302c838401d82199a053df166871952806a4f"
+      "bytes": 5945,
+      "sha256": "1fe8cb49d096940c506932dccc7db48f7e104253301c16957a89acc10bb95980"
     },
     {
       "path": "reference/expected_summary.json",
@@ -303,8 +303,8 @@
     },
     {
       "path": "src/didfigures/plotting.py",
-      "bytes": 16738,
-      "sha256": "86285c92468db989cb8e3f79d511aa04d3c94ce71ec96508a4268157e32cdb98"
+      "bytes": 16579,
+      "sha256": "5c5c26a6323fd4d0ab6389b5db1e12147a5262d996e7f80f221a88dbb9b14331"
     },
     {
       "path": "src/didfigures/screening.py",

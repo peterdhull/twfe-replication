@@ -32,12 +32,10 @@ def render(data, studies, bounds, destination, scale, capped, source_pairs, poli
     if not set(papers).issubset(study_meta.index):
         raise ValueError("Missing study metadata")
     colors = study_meta.color.to_dict()
-    fig, axes = plt.subplots(1, 2, figsize=(14, 10.8))
-    fig.subplots_adjust(left=.066, right=.973, top=.875, bottom=.375, wspace=.20)
-    title = "CSA and BJS versus TWFE" + (" (aligned samples)" if aligned else "")
-    fig.suptitle(title, x=.066, y=.977, ha="left", fontsize=20, fontweight="bold")
+    fig, axes = plt.subplots(1, 2, figsize=(14, 9.6))
+    fig.subplots_adjust(left=.066, right=.973, top=.895, bottom=.305, wspace=.20)
     threshold = float(policy.get("pointwise_abs_t_threshold", 1.96))
-    fig.text(.066, .939,
+    fig.text(.066, .975,
              f"{len(papers)} studies · Filled: paired |t| > {threshold:g} · Hollow: otherwise · Cross: fragile inference",
              fontsize=11, color="#4F5F6B")
     counts = data.drop_duplicates(["specification_id", "summary_period"]).groupby("study_id").size()
@@ -154,7 +152,7 @@ def render(data, studies, bounds, destination, scale, capped, source_pairs, poli
     column_counts = [quotient + int(col < remainder) for col in range(columns)]
     legend_rows = max(column_counts)
     positions = [(col, row) for col, count in enumerate(column_counts) for row in range(count)]
-    legend_top = .291 if legend_rows <= 6 else .307
+    legend_top = .235 if legend_rows <= 6 else .251
     legend_step = (legend_top - .143) / max(1, legend_rows - 1)
     for study, (col, row) in zip(order, positions):
         x, y = .077 + col * (.924 / columns), legend_top - row * legend_step
@@ -165,7 +163,7 @@ def render(data, studies, bounds, destination, scale, capped, source_pairs, poli
             f"Study {study} ({int(study_meta.loc[study, 'publication_year'])})", fontsize=9.5, va="center"))
     hard, warning = policy["hard_exclusion"], policy["warning"]
     notes = [
-        "Circles: static specifications. Squares: event-study averages, with pre and post entering separately. Pre averages are diagnostics, not treatment effects.",
+        "Notes: Circles: static specifications. Squares: event-study averages, with pre and post entering separately. Pre averages are diagnostics, not treatment effects.",
         "Shares use retained comparisons, including flagged points. Significant + Reversal: opposite nonzero signs and a filled marker.",
         (f"Diamonds: coordinates capped at {cap_text}; displayed gaps may differ from actual gaps." if capped else
          "Event studies contribute separate pre- and post-period averages, never individual horizons."),
