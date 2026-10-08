@@ -1,16 +1,10 @@
 # Comparing TWFE, CSA, and BJS: Replication
 
 This repository reproduces the baseline and aligned-sample figures
-from ``Two-Way Fixed Effects and Modern
-Difference-in-Differences: An Empirical Comparison,'' by Peter Hull. It also contains estimate-level bootstrap draws and
+from "Two-Way Fixed Effects and Modern Difference-in-Differences: An Empirical Comparison," by Peter Hull. 
+It also contains estimate-level bootstrap draws and
 covariance blocks for further analysis. It contains **no observation-level
 estimation data** and does not re-estimate models from raw observations.
-
-Release snapshot: **8 October 2026**. Project repository:
-[peterdhull/twfe-replication](https://github.com/peterdhull/twfe-replication).
-This is a public estimate-level replication repository; no software or data
-reuse license has yet been assigned.
-Version 0.2 adds pooled pre-treatment comparisons as separate figure points.
 
 ## Quick start
 
