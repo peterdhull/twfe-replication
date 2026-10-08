@@ -1,0 +1,14 @@
+{
+  "version": "2026-10-08",
+  "families": ["baseline", "aligned_samples"],
+  "scales": {
+    "twfe-se": {"capped_bounds": [-5, 5], "capped_annotation_axes": [0.035, 0.79]},
+    "outcome-sd": {"capped_bounds": [-0.5, 0.5], "capped_annotation_axes": null}
+  },
+  "legend_columns": 4,
+  "legend_order": "Publication year, preserving the frozen anonymous study IDs",
+  "identity_line": true,
+  "capping": "Clip each coordinate independently; mark capped pairs with diamonds",
+  "anonymized": true,
+  "formats": ["png", "svg", "pdf"]
+}

@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "draws_per_block": 999,
+  "blocks": [
+    {
+      "covariance_block_id": "S01-B01",
+      "study_id": 1,
+      "file": "data/covariance/S01-B01.npz",
+      "coordinates": 1194,
+      "draws": 999,
+      "sha256": "12ac347383ac82849d47f41e354ea390bde6f8dd0020f60c3adefc1ca651fe89"
+    },
+    {
+      "covariance_block_id": "S02-B01",
+      "study_id": 2,
+      "file": "data/covariance/S02-B01.npz",
+      "coordinates": 6,
+      "draws": 999,
+      "sha256": "74a65a774649607b4cdf41edd039611f8773a2fc0e1ef5eb4ba9d48162745927"
+    },
+    {
+      "covariance_block_id": "S02-B02",
+      "study_id": 2,
+      "file": "data/covariance/S02-B02.npz",
+      "coordinates": 120,
+      "draws": 999,
+      "sha256": "ab87170bffc9d4144972688f09a2c177cd935e2583fe7745eef4bae33c3b500c"
+    },
+    {
+      "covariance_block_id": "S03-B01",
+      "study_id": 3,
+      "file": "data/covariance/S03-B01.npz",
+      "coordinates": 96,
+      "draws": 999,
+      "sha256": "7033d083bb9d2d1b98ecbf85b0661eda0b6602b2581f91ec2f24268842622de2"
+    },
+    {
+      "covariance_block_id": "S04-B01",
+      "study_id": 4,
+      "file": "data/covariance/S04-B01.npz",
+      "coordinates": 56,
+      "draws": 999,
+      "sha256": "4ddd26f7b9e49aa6fec2a0f6bc4eb24c17b3b7ffaccec90faa40772320eff1c3"
+    },
+    {
+      "covariance_block_id": "S05-B01",
+      "study_id": 5,
+      "file": "data/covariance/S05-B01.npz",
+      "coordinates": 18,
+      "draws": 999,
+      "sha256": "38011064cbc6f4af2b896c063279113fd82d0192629fdd6d1a44c001a89016df"
+    },
+    {
+      "covariance_block_id": "S06-B01",
+      "study_id": 6,
+      "file": "data/covariance/S06-B01.npz",
+      "coordinates": 6,
+      "draws": 999,
+      "sha256": "5e55e141502586a16631d1534a5516accf09d8842f8ad92be0689e00f590c1c9"
+    },
+    {
+      "covariance_block_id": "S07-B01",
+      "study_id": 7,
+      "file": "data/covariance/S07-B01.npz",
+      "coordinates": 18,
+      "draws": 999,
+      "sha256": "38e451ce1e94137dad953d98e2bd1af6b4bfe59c94f2e36442812797cf6a8fda"
+    },
+    {
+      "covariance_block_id": "S08-B01",
+      "study_id": 8,
+      "file": "data/covariance/S08-B01.npz",
+      "coordinates": 32,
+      "draws": 999,
+      "sha256": "5093bc89c4ee546c0c894c352c306a3925425059dd5e6aa228d600386ff036fa"
+    },
+    {
+      "covariance_block_id": "S09-B01",
+      "study_id": 9,
+      "file": "data/covariance/S09-B01.npz",
+      "coordinates": 42,
+      "draws": 999,
+      "sha256": "09ba1b402c51896e46d39c3d31a1c4b7258058000d66a4933cab12fd39e4080c"
+    },
+    {
+      "covariance_block_id": "S10-B01",
+      "study_id": 10,
+      "file": "data/covariance/S10-B01.npz",
+      "coordinates": 12,
+      "draws": 999,
+      "sha256": "a439cc4c780982da9d3dee856a5cf7c2c034b5e640ca695e269005e300a5750b"
+    },
+    {
+      "covariance_block_id": "S11-B01",
+      "study_id": 11,
+      "file": "data/covariance/S11-B01.npz",
+      "coordinates": 7,
+      "draws": 999,
+      "sha256": "79d7928ea40e3104c95deb5d6335782978e42d0b7138c6d326c5776eafcc063c"
+    },
+    {
+      "covariance_block_id": "S12-B01",
+      "study_id": 12,
+      "file": "data/covariance/S12-B01.npz",
+      "coordinates": 24,
+      "draws": 999,
+      "sha256": "e74f972d8527ca943b9c8adb6c744ad8c87ea2bd7d76b058013b7245cf84be92"
+    },
+    {
+      "covariance_block_id": "S13-B01",
+      "study_id": 13,
+      "file": "data/covariance/S13-B01.npz",
+      "coordinates": 22,
+      "draws": 999,
+      "sha256": "c7d929c47c93ea9fc439896cac2e6baa00f20591bbba6c1aad2093f95d6d40b3"
+    },
+    {
+      "covariance_block_id": "S14-B01",
+      "study_id": 14,
+      "file": "data/covariance/S14-B01.npz",
+      "coordinates": 24,
+      "draws": 999,
+      "sha256": "51a9f1591926940273f58949618d210108a95ce0ed9a0ef8b195530f95bc8be1"
+    },
+    {
+      "covariance_block_id": "S15-B01",
+      "study_id": 15,
+      "file": "data/covariance/S15-B01.npz",
+      "coordinates": 16,
+      "draws": 999,
+      "sha256": "16c6fb1727c41c2aa6771fc12820e43b5fe0b26a8b4e068a7067f49892c4d1c8"
+    },
+    {
+      "covariance_block_id": "S16-B01",
+      "study_id": 16,
+      "file": "data/covariance/S16-B01.npz",
+      "coordinates": 93,
+      "draws": 999,
+      "sha256": "a41fcbc688a8e907fc5ae41d821e6207f495b5603c2ad99bf462c0a9a63ae61f"
+    },
+    {
+      "covariance_block_id": "S17-B01",
+      "study_id": 17,
+      "file": "data/covariance/S17-B01.npz",
+      "coordinates": 172,
+      "draws": 999,
+      "sha256": "b16075048654344ff71a8c2f075a6a339491b6cf8059782e9a0f4cf0aac241e0"
+    },
+    {
+      "covariance_block_id": "S18-B01",
+      "study_id": 18,
+      "file": "data/covariance/S18-B01.npz",
+      "coordinates": 108,
+      "draws": 999,
+      "sha256": "47ba5ab11eb6d8c0c4927edc9e3a0c1c4709c289b42381050cc72fde6ceb5d84"
+    },
+    {
+      "covariance_block_id": "S19-B01",
+      "study_id": 19,
+      "file": "data/covariance/S19-B01.npz",
+      "coordinates": 144,
+      "draws": 999,
+      "sha256": "0322c34b6e2aadf3b1397e26c9019291931636437fe18a17956c83b48ca729d7"
+    },
+    {
+      "covariance_block_id": "S20-B01",
+      "study_id": 20,
+      "file": "data/covariance/S20-B01.npz",
+      "coordinates": 12,
+      "draws": 999,
+      "sha256": "f54e7693e60b0d6be772f4cfac47fec1a7237c1540718ec63aea4f4aa38191e3"
+    },
+    {
+      "covariance_block_id": "S21-B01",
+      "study_id": 21,
+      "file": "data/covariance/S21-B01.npz",
+      "coordinates": 67,
+      "draws": 999,
+      "sha256": "fc1687cc71903b74101e34e6310eead6c4110b4e5888ec83aca3fcd078ceb691"
+    },
+    {
+      "covariance_block_id": "S22-B01",
+      "study_id": 22,
+      "file": "data/covariance/S22-B01.npz",
+      "coordinates": 540,
+      "draws": 999,
+      "sha256": "9e0e6c85dda24c30fc3e18ace887fc56005687fd619be23bb0d92215d670ea4e"
+    }
+  ],
+  "covariance_rule": "Within-block covariance equals the sample covariance of the 999 estimate draws (ddof=1).",
+  "cross_block_covariance": "unavailable; not zero; draw numbers have meaning only within one block",
+  "coordinate_indexing": "zero based; column index into draws; row and column index into covariance",
+  "coverage": "Complete active source blocks, including auxiliary native, coefficient, pooled-pre and archived-alignment coordinates where present. Active figure pairs are identified explicitly in comparisons.csv."
+}

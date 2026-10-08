@@ -1,0 +1,55 @@
+{
+  "snapshot_date": "2026-10-08",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "installation": "Fresh virtual environment, pinned requirements.lock; no historical workspace dependency injection"
+  },
+  "release": "v0.2.0",
+  "standalone_tests": {"run": 16, "failures": 0, "errors": 0},
+  "figure_regeneration": {
+    "working_directory_outside_checkout": true,
+    "python_isolated_mode": true,
+    "figure_variants": 8,
+    "formats": ["png", "svg", "pdf"],
+    "pre_averages_included": true,
+    "static_and_event_shapes_distinguished": true,
+    "input_hashes_unchanged": true
+  },
+  "source_export_audit": {
+    "comparison_rows": 1332,
+    "pooled_pre_records": 265,
+    "covariance_blocks": 23,
+    "coordinate_count": 2829,
+    "draws_per_block": 999,
+    "point_and_draw_arrays_unchanged": true,
+    "maximum_pair_inference_error": 2.220446049250313e-16
+  },
+  "pre_comparison_audit": {
+    "pairs": 88,
+    "event_specifications": 22,
+    "studies": 5,
+    "all_pass_hard_screen": true,
+    "maximum_point_reconstruction_error": 8.01879396217231e-13,
+    "original_numerical_files_unchanged": 30,
+    "covariance_archives_unchanged": 23,
+    "independent_synthetic_adjoint_checks": 36,
+    "independent_munoz_random_outcome_checks": 32
+  },
+  "scope_checks": {
+    "study_names_permitted_in_provenance": true,
+    "writeup_and_default_figures_anonymized": true,
+    "observation_records_included": false,
+    "cluster_identifiers_or_multipliers_included": false,
+    "private_author_urls_or_credentials_included": false,
+    "local_source_paths_included": false
+  },
+  "limitations": [
+    "Validation reproduces saved-estimate figures, not upstream observation-level estimation.",
+    "Cross-block covariance is unavailable, not zero.",
+    "Public redistribution license remains undecided; private GitHub upload is authorized."
+  ]
+}

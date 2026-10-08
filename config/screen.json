@@ -1,0 +1,15 @@
+{
+  "version": "2026-10-08",
+  "numerical_boundary_tolerance": 1e-10,
+  "hard_exclusion": {
+    "effective_clusters_below": 5,
+    "maximum_cluster_share_above": 0.5
+  },
+  "warning": {
+    "effective_clusters_below": 10,
+    "maximum_cluster_share_above": 0.25
+  },
+  "pointwise_abs_t_threshold": 1.96,
+  "share_denominator": "All retained pairs, including warning-marked points",
+  "screen_scope": "Hard exclusions on either estimator; warnings on either estimator or nonidentity difference, plus prior inference warnings"
+}

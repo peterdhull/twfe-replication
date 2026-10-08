@@ -1,0 +1,109 @@
+{
+  "version": "2026-10-08-with-pre",
+  "source_studies": 22,
+  "source_specifications": 335,
+  "source_summary_points": 357,
+  "source_pairs_per_family": {
+    "bjs": 357,
+    "csa": 353
+  },
+  "retained_studies": 20,
+  "retained_specifications": 275,
+  "retained_summary_points": 297,
+  "families": {
+    "aligned_samples": {
+      "bjs": {
+        "pairs": 288,
+        "studies": 20,
+        "fragile": 68,
+        "reversals": 16,
+        "significant": 30,
+        "significant_reversals": 3,
+        "twfe_se_capped": 41,
+        "pre_averages": 22,
+        "post_averages": 28,
+        "scalar_summaries": 238
+      },
+      "csa": {
+        "pairs": 263,
+        "studies": 18,
+        "fragile": 58,
+        "reversals": 40,
+        "significant": 21,
+        "significant_reversals": 0,
+        "twfe_se_capped": 31,
+        "pre_averages": 22,
+        "post_averages": 28,
+        "scalar_summaries": 213
+      }
+    },
+    "baseline": {
+      "bjs": {
+        "pairs": 288,
+        "studies": 20,
+        "fragile": 75,
+        "reversals": 20,
+        "significant": 42,
+        "significant_reversals": 3,
+        "twfe_se_capped": 43,
+        "pre_averages": 22,
+        "post_averages": 28,
+        "scalar_summaries": 238
+      },
+      "csa": {
+        "pairs": 263,
+        "studies": 18,
+        "fragile": 60,
+        "reversals": 32,
+        "significant": 22,
+        "significant_reversals": 3,
+        "twfe_se_capped": 32,
+        "pre_averages": 22,
+        "post_averages": 28,
+        "scalar_summaries": 213
+      }
+    }
+  },
+  "pre_by_family": {
+    "aligned_samples": {
+      "bjs": {
+        "pairs": 22,
+        "studies": 5,
+        "fragile": 2,
+        "reversals": 1,
+        "significant": 1,
+        "significant_reversals": 0,
+        "twfe_se_capped": 0
+      },
+      "csa": {
+        "pairs": 22,
+        "studies": 5,
+        "fragile": 4,
+        "reversals": 5,
+        "significant": 1,
+        "significant_reversals": 0,
+        "twfe_se_capped": 0
+      }
+    },
+    "baseline": {
+      "bjs": {
+        "pairs": 22,
+        "studies": 5,
+        "fragile": 7,
+        "reversals": 5,
+        "significant": 0,
+        "significant_reversals": 0,
+        "twfe_se_capped": 0
+      },
+      "csa": {
+        "pairs": 22,
+        "studies": 5,
+        "fragile": 4,
+        "reversals": 4,
+        "significant": 1,
+        "significant_reversals": 0,
+        "twfe_se_capped": 0
+      }
+    }
+  }
+}

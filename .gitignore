@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+outputs/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# Source observations and credential files are outside this release's scope.
+data/raw/
+data/estimation/
+data/author_supplied/
+*.dta
+*.rds
+*.Rds
+*.RDS
+*.xlsx
+*.xls
+*.sav
+*.sas7bdat
+.env
+*.pem
+*.key
+
+# Author is making final edits; keep the manuscript PDF local until approved.
+paper/did_reanalysis.pdf

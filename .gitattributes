@@ -1,0 +1,4 @@
+# Preserve distributed bytes so manifest hashes are stable across platforms.
+* -text
+*.npz binary
+*.pdf binary

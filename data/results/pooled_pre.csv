@@ -1,0 +1,266 @@
+study_id,specification_id,summary_period,coordinate_type,coordinate,estimate,positive_se,complete_draws,registered_pre_term_count,registered_pre_terms,reference_not_pure_untreated_baseline,matched_rows,matched_treated_rows,matched_clusters,available,raw_estimate,native_twfe_estimate,native_twfe_se,native_rows,native_clusters,shared_cluster_frame,original_outcome_sd,horizon_set,original_horizon_set,original_full_window_available,newly_available,retained_pre_term_count,published_estimator,twfe_is_published_estimator,diagnostic_id,family,unavailable_reason_code,covariance_block_id,coordinate_id,coordinate_index
+1,S01-P001,pre,frozen_source_estimator,twfe,-0.043014579093057073,0.087550952137504717,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0001,baseline,,S01-B01,S01-B01-C0846,845
+1,S01-P001,pre,frozen_source_estimator,csa,-0.19162137264483844,0.16514554409238347,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0002,baseline,,S01-B01,S01-B01-C0852,851
+1,S01-P001,pre,frozen_source_estimator,bjs,-0.18580109661793023,0.11992275237209982,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0003,baseline,,S01-B01,S01-B01-C0858,857
+1,S01-P001,pre,matched_sample_twfe,csa_A,-0.18580109661793018,0.11992275237209984,999,1,"[""le_m2""]",False,558,0,49,True,,,,,,116,,,,,,,,,PRE0004,archived_alignment_A,,S01-B01,S01-B01-C0864,863
+1,S01-P001,pre,matched_sample_twfe,csa_B,-0.19231470238526938,0.12218052804153494,999,1,"[""le_m2""]",False,393,0,38,True,,,,,,116,,,,,,,,,PRE0005,aligned_samples,,S01-B01,S01-B01-C0862,861
+1,S01-P001,pre,matched_sample_twfe,bjs,-0.18580109661793018,0.11992275237209984,999,1,"[""le_m2""]",False,558,0,49,True,,,,,,116,,,,,,,,,PRE0006,aligned_samples,,S01-B01,S01-B01-C0863,862
+1,S01-P002,pre,frozen_source_estimator,twfe,-0.08265492934254004,0.079770097813655003,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0007,baseline,,S01-B01,S01-B01-C0876,875
+1,S01-P002,pre,frozen_source_estimator,csa,-0.20269884925951859,0.15964253412797608,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0008,baseline,,S01-B01,S01-B01-C0882,881
+1,S01-P002,pre,frozen_source_estimator,bjs,-0.13322026806065929,0.14858046329343993,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0009,baseline,,S01-B01,S01-B01-C0888,887
+1,S01-P002,pre,matched_sample_twfe,csa_A,-0.13322026806065898,0.14858046329343993,999,1,"[""le_m2""]",False,553,0,49,True,,,,,,116,,,,,,,,,PRE0010,archived_alignment_A,,S01-B01,S01-B01-C0894,893
+1,S01-P002,pre,matched_sample_twfe,csa_B,-0.12880781618567436,0.15097884305296064,999,1,"[""le_m2""]",False,390,0,38,True,,,,,,116,,,,,,,,,PRE0011,aligned_samples,,S01-B01,S01-B01-C0892,891
+1,S01-P002,pre,matched_sample_twfe,bjs,-0.13322026806065898,0.14858046329343993,999,1,"[""le_m2""]",False,553,0,49,True,,,,,,116,,,,,,,,,PRE0012,aligned_samples,,S01-B01,S01-B01-C0893,892
+1,S01-P003,pre,frozen_source_estimator,twfe,-0.1705176850417926,0.07958452246027628,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0013,baseline,,S01-B01,S01-B01-C0906,905
+1,S01-P003,pre,frozen_source_estimator,csa,-0.22523796818879846,0.16889459893274392,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0014,baseline,,S01-B01,S01-B01-C0912,911
+1,S01-P003,pre,frozen_source_estimator,bjs,-0.19713880268187861,0.12700342442309392,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0015,baseline,,S01-B01,S01-B01-C0918,917
+1,S01-P003,pre,matched_sample_twfe,csa_A,-0.19713880268187867,0.12700342442309392,999,1,"[""le_m2""]",False,549,0,49,True,,,,,,116,,,,,,,,,PRE0016,archived_alignment_A,,S01-B01,S01-B01-C0924,923
+1,S01-P003,pre,matched_sample_twfe,csa_B,-0.20821191596129052,0.12658181496857865,999,1,"[""le_m2""]",False,386,0,38,True,,,,,,116,,,,,,,,,PRE0017,aligned_samples,,S01-B01,S01-B01-C0922,921
+1,S01-P003,pre,matched_sample_twfe,bjs,-0.19713880268187867,0.12700342442309392,999,1,"[""le_m2""]",False,549,0,49,True,,,,,,116,,,,,,,,,PRE0018,aligned_samples,,S01-B01,S01-B01-C0923,922
+1,S01-P004,pre,frozen_source_estimator,twfe,0.15309607268588823,0.083044853708782521,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0019,baseline,,S01-B01,S01-B01-C0936,935
+1,S01-P004,pre,frozen_source_estimator,csa,0.15667177064039745,0.16322853116613154,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0020,baseline,,S01-B01,S01-B01-C0942,941
+1,S01-P004,pre,frozen_source_estimator,bjs,0.16620075310163837,0.14860452215601552,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0021,baseline,,S01-B01,S01-B01-C0948,947
+1,S01-P004,pre,matched_sample_twfe,csa_A,0.16620075310163857,0.14860452215601552,999,1,"[""le_m2""]",False,529,0,49,True,,,,,,116,,,,,,,,,PRE0022,archived_alignment_A,,S01-B01,S01-B01-C0954,953
+1,S01-P004,pre,matched_sample_twfe,csa_B,0.16320459166284795,0.15208734728064108,999,1,"[""le_m2""]",False,367,0,38,True,,,,,,116,,,,,,,,,PRE0023,aligned_samples,,S01-B01,S01-B01-C0952,951
+1,S01-P004,pre,matched_sample_twfe,bjs,0.16620075310163857,0.14860452215601552,999,1,"[""le_m2""]",False,529,0,49,True,,,,,,116,,,,,,,,,PRE0024,aligned_samples,,S01-B01,S01-B01-C0953,952
+1,S01-P005,pre,frozen_source_estimator,twfe,0.085365712903472918,0.078764286168216568,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0025,baseline,,S01-B01,S01-B01-C0966,965
+1,S01-P005,pre,frozen_source_estimator,csa,0.036435681601870641,0.15065812508680265,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0026,baseline,,S01-B01,S01-B01-C0972,971
+1,S01-P005,pre,frozen_source_estimator,bjs,0.053152846323456258,0.13453478671454183,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0027,baseline,,S01-B01,S01-B01-C0978,977
+1,S01-P005,pre,matched_sample_twfe,csa_A,0.053152846323455967,0.13453478671454183,999,1,"[""le_m2""]",False,549,0,49,True,,,,,,116,,,,,,,,,PRE0028,archived_alignment_A,,S01-B01,S01-B01-C0984,983
+1,S01-P005,pre,matched_sample_twfe,csa_B,0.025051338866327714,0.13037754179501923,999,1,"[""le_m2""]",False,386,0,38,True,,,,,,116,,,,,,,,,PRE0029,aligned_samples,,S01-B01,S01-B01-C0982,981
+1,S01-P005,pre,matched_sample_twfe,bjs,0.053152846323455967,0.13453478671454183,999,1,"[""le_m2""]",False,549,0,49,True,,,,,,116,,,,,,,,,PRE0030,aligned_samples,,S01-B01,S01-B01-C0983,982
+1,S01-P006,pre,frozen_source_estimator,twfe,0.059826615691534968,0.094541401801594468,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0031,baseline,,S01-B01,S01-B01-C0996,995
+1,S01-P006,pre,frozen_source_estimator,csa,0.28349044761941516,0.15018776927894559,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0032,baseline,,S01-B01,S01-B01-C1002,1001
+1,S01-P006,pre,frozen_source_estimator,bjs,0.29640464315275733,0.15933582154134526,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0033,baseline,,S01-B01,S01-B01-C1008,1007
+1,S01-P006,pre,matched_sample_twfe,csa_A,0.29640464315275822,0.15933582154134521,999,1,"[""le_m2""]",False,512,0,49,True,,,,,,116,,,,,,,,,PRE0034,archived_alignment_A,,S01-B01,S01-B01-C1014,1013
+1,S01-P006,pre,matched_sample_twfe,csa_B,0.31877723333835145,0.15862497723021804,999,1,"[""le_m2""]",False,359,0,38,True,,,,,,116,,,,,,,,,PRE0035,aligned_samples,,S01-B01,S01-B01-C1012,1011
+1,S01-P006,pre,matched_sample_twfe,bjs,0.29640464315275822,0.15933582154134521,999,1,"[""le_m2""]",False,512,0,49,True,,,,,,116,,,,,,,,,PRE0036,aligned_samples,,S01-B01,S01-B01-C1013,1012
+1,S01-P007,pre,frozen_source_estimator,twfe,0.0050641039987044468,0.091332198561588557,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0037,baseline,,S01-B01,S01-B01-C1026,1025
+1,S01-P007,pre,frozen_source_estimator,csa,-0.19451610462384358,0.2309977778510254,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0038,baseline,,S01-B01,S01-B01-C1032,1031
+1,S01-P007,pre,frozen_source_estimator,bjs,-0.14231631302191092,0.1512986774944336,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0039,baseline,,S01-B01,S01-B01-C1038,1037
+1,S01-P007,pre,matched_sample_twfe,csa_A,-0.14231631302191117,0.15129867749443357,999,1,"[""le_m2""]",False,566,0,49,True,,,,,,116,,,,,,,,,PRE0040,archived_alignment_A,,S01-B01,S01-B01-C1044,1043
+1,S01-P007,pre,matched_sample_twfe,csa_B,-0.14984079228024236,0.15364530501377835,999,1,"[""le_m2""]",False,399,0,38,True,,,,,,116,,,,,,,,,PRE0041,aligned_samples,,S01-B01,S01-B01-C1042,1041
+1,S01-P007,pre,matched_sample_twfe,bjs,-0.14231631302191117,0.15129867749443357,999,1,"[""le_m2""]",False,566,0,49,True,,,,,,116,,,,,,,,,PRE0042,aligned_samples,,S01-B01,S01-B01-C1043,1042
+1,S01-P008,pre,frozen_source_estimator,twfe,-0.11153259410988406,0.10505504624910207,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0043,baseline,,S01-B01,S01-B01-C1056,1055
+1,S01-P008,pre,frozen_source_estimator,csa,-0.30469563061642407,0.18681297506555017,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0044,baseline,,S01-B01,S01-B01-C1062,1061
+1,S01-P008,pre,frozen_source_estimator,bjs,-0.36429336394709544,0.17633364153135006,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0045,baseline,,S01-B01,S01-B01-C1068,1067
+1,S01-P008,pre,matched_sample_twfe,csa_A,-0.36429336394710099,0.17633364153135003,999,1,"[""le_m2""]",False,541,0,49,True,,,,,,116,,,,,,,,,PRE0046,archived_alignment_A,,S01-B01,S01-B01-C1074,1073
+1,S01-P008,pre,matched_sample_twfe,csa_B,-0.40234250293032753,0.16817084460101941,999,1,"[""le_m2""]",False,382,0,38,True,,,,,,116,,,,,,,,,PRE0047,aligned_samples,,S01-B01,S01-B01-C1072,1071
+1,S01-P008,pre,matched_sample_twfe,bjs,-0.36429336394710099,0.17633364153135003,999,1,"[""le_m2""]",False,541,0,49,True,,,,,,116,,,,,,,,,PRE0048,aligned_samples,,S01-B01,S01-B01-C1073,1072
+1,S01-P009,pre,frozen_source_estimator,twfe,-0.043555567543276864,0.11308227426527211,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0049,baseline,,S01-B01,S01-B01-C1086,1085
+1,S01-P009,pre,frozen_source_estimator,csa,-0.11973404335759681,0.22079591100879192,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0050,baseline,,S01-B01,S01-B01-C1092,1091
+1,S01-P009,pre,frozen_source_estimator,bjs,-0.047009385312843988,0.22600049967773048,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0051,baseline,,S01-B01,S01-B01-C1098,1097
+1,S01-P009,pre,matched_sample_twfe,csa_A,-0.047009385312844251,0.22600049967773045,999,1,"[""le_m2""]",False,542,0,49,True,,,,,,116,,,,,,,,,PRE0052,archived_alignment_A,,S01-B01,S01-B01-C1104,1103
+1,S01-P009,pre,matched_sample_twfe,csa_B,-0.034184041708800489,0.23053294320399451,999,1,"[""le_m2""]",False,383,0,38,True,,,,,,116,,,,,,,,,PRE0053,aligned_samples,,S01-B01,S01-B01-C1102,1101
+1,S01-P009,pre,matched_sample_twfe,bjs,-0.047009385312844251,0.22600049967773045,999,1,"[""le_m2""]",False,542,0,49,True,,,,,,116,,,,,,,,,PRE0054,aligned_samples,,S01-B01,S01-B01-C1103,1102
+1,S01-P010,pre,frozen_source_estimator,twfe,-0.14718430442826794,0.085682566874578467,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0055,baseline,,S01-B01,S01-B01-C1116,1115
+1,S01-P010,pre,frozen_source_estimator,csa,-0.25757600227584604,0.14694752383731874,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0056,baseline,,S01-B01,S01-B01-C1122,1121
+1,S01-P010,pre,frozen_source_estimator,bjs,-0.26333515023449189,0.12905949515939896,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0057,baseline,,S01-B01,S01-B01-C1128,1127
+1,S01-P010,pre,matched_sample_twfe,csa_A,-0.26333515023449122,0.12905949515939899,999,1,"[""le_m2""]",False,540,0,49,True,,,,,,116,,,,,,,,,PRE0058,archived_alignment_A,,S01-B01,S01-B01-C1134,1133
+1,S01-P010,pre,matched_sample_twfe,csa_B,-0.23966995210558198,0.13019827724050531,999,1,"[""le_m2""]",False,382,0,38,True,,,,,,116,,,,,,,,,PRE0059,aligned_samples,,S01-B01,S01-B01-C1132,1131
+1,S01-P010,pre,matched_sample_twfe,bjs,-0.26333515023449122,0.12905949515939899,999,1,"[""le_m2""]",False,540,0,49,True,,,,,,116,,,,,,,,,PRE0060,aligned_samples,,S01-B01,S01-B01-C1133,1132
+1,S01-P011,pre,frozen_source_estimator,twfe,-0.05644547214147401,0.079503356201501341,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0061,baseline,,S01-B01,S01-B01-C1146,1145
+1,S01-P011,pre,frozen_source_estimator,csa,0.040628451525892006,0.21786434423840495,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0062,baseline,,S01-B01,S01-B01-C1152,1151
+1,S01-P011,pre,frozen_source_estimator,bjs,-0.017201538488877552,0.15694712672923961,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0063,baseline,,S01-B01,S01-B01-C1158,1157
+1,S01-P011,pre,matched_sample_twfe,csa_A,-0.017201538488877531,0.15694712672923958,999,1,"[""le_m2""]",False,540,0,49,True,,,,,,116,,,,,,,,,PRE0064,archived_alignment_A,,S01-B01,S01-B01-C1164,1163
+1,S01-P011,pre,matched_sample_twfe,csa_B,-0.0015295740753964808,0.16352730798269927,999,1,"[""le_m2""]",False,382,0,38,True,,,,,,116,,,,,,,,,PRE0065,aligned_samples,,S01-B01,S01-B01-C1162,1161
+1,S01-P011,pre,matched_sample_twfe,bjs,-0.017201538488877531,0.15694712672923958,999,1,"[""le_m2""]",False,540,0,49,True,,,,,,116,,,,,,,,,PRE0066,aligned_samples,,S01-B01,S01-B01-C1163,1162
+1,S01-P012,pre,frozen_source_estimator,twfe,-0.062114088320455826,0.084278083958990696,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0067,baseline,,S01-B01,S01-B01-C1176,1175
+1,S01-P012,pre,frozen_source_estimator,csa,-0.070164513625679298,0.15478871693150106,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0068,baseline,,S01-B01,S01-B01-C1182,1181
+1,S01-P012,pre,frozen_source_estimator,bjs,0.0089937277423575955,0.11401437643090807,999,1,"[""le_m2""]",False,,,,True,,,,,,116,,,,,,,,,PRE0069,baseline,,S01-B01,S01-B01-C1188,1187
+1,S01-P012,pre,matched_sample_twfe,csa_A,0.0089937277423568201,0.11401437643090806,999,1,"[""le_m2""]",False,540,0,49,True,,,,,,116,,,,,,,,,PRE0070,archived_alignment_A,,S01-B01,S01-B01-C1194,1193
+1,S01-P012,pre,matched_sample_twfe,csa_B,0.012985714872671104,0.11729970851128137,999,1,"[""le_m2""]",False,382,0,38,True,,,,,,116,,,,,,,,,PRE0071,aligned_samples,,S01-B01,S01-B01-C1192,1191
+1,S01-P012,pre,matched_sample_twfe,bjs,0.0089937277423568201,0.11401437643090806,999,1,"[""le_m2""]",False,540,0,49,True,,,,,,116,,,,,,,,,PRE0072,aligned_samples,,S01-B01,S01-B01-C1193,1192
+11,S11-P001,pre,frozen_source_estimator,twfe,-0.12566921663891906,0.028470696988157039,999,4,"[-5, -4, -3, -2]",False,,,,True,,,,,,,,,,,,,,,PRE0073,baseline,,S11-B01,S11-B01-C0007,6
+11,S11-P001,pre,frozen_source_estimator,csa,,,0,4,"[-5, -4, -3, -2]",False,,,,False,,,,,,,,,,,,,,,PRE0074,baseline,modern_pre_estimand_not_registered,,,
+11,S11-P001,pre,frozen_source_estimator,bjs,,,0,4,"[-5, -4, -3, -2]",False,,,,False,,,,,,,,,,,,,,,PRE0075,baseline,modern_pre_estimand_not_registered,,,
+11,S11-P001,pre,matched_sample_twfe,csa_A,,,0,4,"[-5, -4, -3, -2]",False,,,,False,,,,,,,,,,,,,,,PRE0076,archived_alignment_A,modern_pre_estimand_not_registered,,,
+11,S11-P001,pre,matched_sample_twfe,csa_B,,,0,4,"[-5, -4, -3, -2]",False,,,,False,,,,,,,,,,,,,,,PRE0077,aligned_samples,modern_pre_estimand_not_registered,,,
+11,S11-P001,pre,matched_sample_twfe,bjs,,,0,4,"[-5, -4, -3, -2]",False,,,,False,,,,,,,,,,,,,,,PRE0078,aligned_samples,modern_pre_estimand_not_registered,,,
+18,S18-P001,pre,frozen_source_estimator,twfe,-0.023125932007633666,0.038994698104570048,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0079,baseline,,S18-B01,S18-B01-C0085,84
+18,S18-P001,pre,frozen_source_estimator,csa,-0.022095342629448952,0.030202586406601381,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0080,baseline,,S18-B01,S18-B01-C0086,85
+18,S18-P001,pre,frozen_source_estimator,bjs,-0.048760623678166498,0.022849676579851423,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0081,baseline,,S18-B01,S18-B01-C0087,86
+18,S18-P001,pre,matched_sample_twfe,csa_A,-0.070714994169368467,0.029537729700147789,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,97658,30,627,True,,,,,,,,,,,,,,,PRE0082,archived_alignment_A,,S18-B01,S18-B01-C0088,87
+18,S18-P001,pre,matched_sample_twfe,csa_B,-0.06970409372305883,0.029559240255098877,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,86970,30,613,True,,,,,,,,,,,,,,,PRE0083,aligned_samples,,S18-B01,S18-B01-C0089,88
+18,S18-P001,pre,matched_sample_twfe,bjs,-0.070714994169368467,0.029537729700147789,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,97658,30,627,True,,,,,,,,,,,,,,,PRE0084,aligned_samples,,S18-B01,S18-B01-C0090,89
+18,S18-P002,pre,frozen_source_estimator,twfe,-0.0016793639926062415,0.042379850522299395,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0085,baseline,,S18-B01,S18-B01-C0091,90
+18,S18-P002,pre,frozen_source_estimator,csa,0.0088507486576641127,0.03765151454793908,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0086,baseline,,S18-B01,S18-B01-C0092,91
+18,S18-P002,pre,frozen_source_estimator,bjs,-0.0073264634139474389,0.029380554685070358,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0087,baseline,,S18-B01,S18-B01-C0093,92
+18,S18-P002,pre,matched_sample_twfe,csa_A,-0.017846185223144111,0.037194860772686134,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,97658,30,627,True,,,,,,,,,,,,,,,PRE0088,archived_alignment_A,,S18-B01,S18-B01-C0094,93
+18,S18-P002,pre,matched_sample_twfe,csa_B,-0.01745168849594592,0.037337631489455084,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,86970,30,613,True,,,,,,,,,,,,,,,PRE0089,aligned_samples,,S18-B01,S18-B01-C0095,94
+18,S18-P002,pre,matched_sample_twfe,bjs,-0.017846185223144111,0.037194860772686134,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,97658,30,627,True,,,,,,,,,,,,,,,PRE0090,aligned_samples,,S18-B01,S18-B01-C0096,95
+18,S18-P003,pre,frozen_source_estimator,twfe,-0.15304623826986954,0.34412127438557066,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0091,baseline,,S18-B01,S18-B01-C0097,96
+18,S18-P003,pre,frozen_source_estimator,csa,-0.2425333571042578,0.2896388111596882,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0092,baseline,,S18-B01,S18-B01-C0098,97
+18,S18-P003,pre,frozen_source_estimator,bjs,0.037611984884993836,0.11437173163049551,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0093,baseline,,S18-B01,S18-B01-C0099,98
+18,S18-P003,pre,matched_sample_twfe,csa_A,0.11580753095103408,0.69274557379440793,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,1798,11,23,True,,,,,,,,,,,,,,,PRE0094,archived_alignment_A,,S18-B01,S18-B01-C0100,99
+18,S18-P003,pre,matched_sample_twfe,csa_B,0.28314936469594948,0.67625294480058107,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,1680,11,22,True,,,,,,,,,,,,,,,PRE0095,aligned_samples,,S18-B01,S18-B01-C0101,100
+18,S18-P003,pre,matched_sample_twfe,bjs,0.11733996130009493,0.69194157831972203,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,1799,12,23,True,,,,,,,,,,,,,,,PRE0096,aligned_samples,,S18-B01,S18-B01-C0102,101
+18,S18-P004,pre,frozen_source_estimator,twfe,-0.22511850755878271,0.33224763359718518,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0097,baseline,,S18-B01,S18-B01-C0103,102
+18,S18-P004,pre,frozen_source_estimator,csa,-0.34180652827602054,0.28330804894239936,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0098,baseline,,S18-B01,S18-B01-C0104,103
+18,S18-P004,pre,frozen_source_estimator,bjs,0.035052259712197303,0.099421589701857632,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,,,,True,,,,,,,,,,,,,,,PRE0099,baseline,,S18-B01,S18-B01-C0105,104
+18,S18-P004,pre,matched_sample_twfe,csa_A,-0.26625578570407626,0.60705603856717516,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,1798,11,23,True,,,,,,,,,,,,,,,PRE0100,archived_alignment_A,,S18-B01,S18-B01-C0106,105
+18,S18-P004,pre,matched_sample_twfe,csa_B,-0.16542660480546292,0.62331744067790018,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,1680,11,22,True,,,,,,,,,,,,,,,PRE0101,aligned_samples,,S18-B01,S18-B01-C0107,106
+18,S18-P004,pre,matched_sample_twfe,bjs,-0.26612304658814184,0.60668989362471937,999,9,"[-10, -9, -8, -7, -6, -5, -4, -3, -2]",True,1799,12,23,True,,,,,,,,,,,,,,,PRE0102,aligned_samples,,S18-B01,S18-B01-C0108,107
+21,S21-P003,pre,frozen_source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0103,baseline,all_pre_periods_omitted,,,
+21,S21-P003,pre,frozen_source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0104,baseline,all_pre_periods_omitted,,,
+21,S21-P003,pre,frozen_source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0105,baseline,all_pre_periods_omitted,,,
+21,S21-P003,pre,matched_sample_twfe,csa_A,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0106,archived_alignment_A,all_pre_periods_omitted,,,
+21,S21-P003,pre,matched_sample_twfe,csa_B,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0107,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P003,pre,matched_sample_twfe,bjs,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0108,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P004,pre,frozen_source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0109,baseline,all_pre_periods_omitted,,,
+21,S21-P004,pre,frozen_source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0110,baseline,all_pre_periods_omitted,,,
+21,S21-P004,pre,frozen_source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0111,baseline,all_pre_periods_omitted,,,
+21,S21-P004,pre,matched_sample_twfe,csa_A,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0112,archived_alignment_A,all_pre_periods_omitted,,,
+21,S21-P004,pre,matched_sample_twfe,csa_B,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0113,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P004,pre,matched_sample_twfe,bjs,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0114,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P001,pre,frozen_source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0115,baseline,all_pre_periods_omitted,,,
+21,S21-P001,pre,frozen_source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0116,baseline,all_pre_periods_omitted,,,
+21,S21-P001,pre,frozen_source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0117,baseline,all_pre_periods_omitted,,,
+21,S21-P001,pre,matched_sample_twfe,csa_A,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0118,archived_alignment_A,all_pre_periods_omitted,,,
+21,S21-P001,pre,matched_sample_twfe,csa_B,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0119,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P001,pre,matched_sample_twfe,bjs,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0120,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P002,pre,frozen_source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0121,baseline,all_pre_periods_omitted,,,
+21,S21-P002,pre,frozen_source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0122,baseline,all_pre_periods_omitted,,,
+21,S21-P002,pre,frozen_source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0123,baseline,all_pre_periods_omitted,,,
+21,S21-P002,pre,matched_sample_twfe,csa_A,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0124,archived_alignment_A,all_pre_periods_omitted,,,
+21,S21-P002,pre,matched_sample_twfe,csa_B,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0125,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P002,pre,matched_sample_twfe,bjs,,,0,0,[],False,,,,False,,,,,,,,,,,,,,,PRE0126,aligned_samples,all_pre_periods_omitted,,,
+20,S20-P001,pre,frozen_source_estimator,twfe,0.1034124048780428,0.044663270426452399,999,19,"[-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2]",False,,,,True,,,,,,,,,,,,,,,PRE0127,baseline,,S20-B01,S20-B01-C0007,6
+20,S20-P001,pre,frozen_source_estimator,csa,0.031743675591794418,0.039740297610852258,999,19,"[-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2]",False,,,,True,,,,,,,,,,,,,,,PRE0128,baseline,,S20-B01,S20-B01-C0008,7
+20,S20-P001,pre,frozen_source_estimator,bjs,0.054359192835704492,0.05203436671753825,999,19,"[-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2]",False,,,,True,,,,,,,,,,,,,,,PRE0129,baseline,,S20-B01,S20-B01-C0009,8
+20,S20-P001,pre,matched_sample_twfe,csa_A,0.054359192835753911,0.052034366717538055,999,19,"[-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2]",False,20508,0,47,True,,,,,,,,,,,,,,,PRE0130,archived_alignment_A,,S20-B01,S20-B01-C0010,9
+20,S20-P001,pre,matched_sample_twfe,csa_B,0.054359192835752482,0.052034366717538152,999,19,"[-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2]",False,19926,0,47,True,,,,,,,,,,,,,,,PRE0131,aligned_samples,,S20-B01,S20-B01-C0011,10
+20,S20-P001,pre,matched_sample_twfe,bjs,0.054359192835753911,0.052034366717538055,999,19,"[-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2]",False,20508,0,47,True,,,,,,,,,,,,,,,PRE0132,aligned_samples,,S20-B01,S20-B01-C0012,11
+17,S17-P002,pre,exact_union_B,twfe_csa,0.12766198938285389,0.072807700584312088,999,4,"[-5, -4, -3, -2]",False,,,,True,0.29528115245901221,,,977,76,76,2.3129919397814978,"[-5, -4, -3, -2]","[-5, -4, -3, -2]",True,False,4,,,PRE0133,aligned_samples,,S17-B01,S17-B01-C0009,8
+17,S17-P002,pre,source_estimator,csa,0.26349374820993188,0.098109161592671301,999,4,"[-5, -4, -3, -2]",False,,,,True,0.60945891579238787,,,977,76,76,2.3129919397814978,"[-5, -4, -3, -2]","[-5, -4, -3, -2]",True,False,4,,,PRE0134,aligned_samples,,S17-B01,S17-B01-C0156,155
+17,S17-P002,pre,exact_union_B,twfe_bjs,0.13757501300882818,0.073576141702382067,999,4,"[-5, -4, -3, -2]",False,,,,True,0.31820989620475432,,,977,76,76,2.3129919397814978,"[-5, -4, -3, -2]","[-5, -4, -3, -2]",True,False,4,,,PRE0135,aligned_samples,,S17-B01,S17-B01-C0010,9
+17,S17-P002,pre,source_estimator,bjs,0.13757501300882816,0.073576141702382067,999,4,"[-5, -4, -3, -2]",False,,,,True,0.31820989620475421,,,977,76,76,2.3129919397814978,"[-5, -4, -3, -2]","[-5, -4, -3, -2]",True,False,4,,,PRE0136,aligned_samples,,S17-B01,S17-B01-C0158,157
+17,S17-P002,pre,source_estimator,twfe,0.19244443966155414,0.073023866778384405,999,4,"[-5, -4, -3, -2]",False,,,,True,0.44512243779294153,,,977,76,76,2.3129919397814978,"[-5, -4, -3, -2]","[-5, -4, -3, -2]",True,False,4,,,PRE0137,baseline,,S17-B01,S17-B01-C0006,5
+17,S17-P002,pre,source_estimator,csa,0.26349374820993188,0.098109161592671301,999,4,"[-5, -4, -3, -2]",False,,,,True,0.60945891579238787,,,977,76,76,2.3129919397814978,"[-5, -4, -3, -2]","[-5, -4, -3, -2]",True,False,4,,,PRE0138,baseline,,S17-B01,S17-B01-C0007,6
+17,S17-P002,pre,source_estimator,bjs,0.13757501300882816,0.073576141702382067,999,4,"[-5, -4, -3, -2]",False,,,,True,0.31820989620475421,,,977,76,76,2.3129919397814978,"[-5, -4, -3, -2]","[-5, -4, -3, -2]",True,False,4,,,PRE0139,baseline,,S17-B01,S17-B01-C0008,7
+17,S17-P003,pre,exact_union_B,twfe_csa,0.011429391698260129,0.15523779441368549,999,4,"[-5, -4, -3, -2]",False,,,,True,0.02595029230425655,,,861,73,76,2.2704876155576073,"[-3, -2]","[-5, -4, -3, -2]",False,True,2,,,PRE0140,aligned_samples,,S17-B01,S17-B01-C0169,168
+17,S17-P003,pre,source_estimator,csa,0.076852854972400658,0.1739089931225771,999,4,"[-5, -4, -3, -2]",False,,,,True,0.17449345543508057,,,861,73,76,2.2704876155576073,"[-3, -2]","[-5, -4, -3, -2]",False,True,2,,,PRE0141,aligned_samples,,S17-B01,S17-B01-C0170,169
+17,S17-P003,pre,exact_union_B,twfe_bjs,-0.033840892449069064,0.16178334413896681,999,4,"[-5, -4, -3, -2]",False,,,,True,-0.076835327205028253,,,861,73,76,2.2704876155576073,"[-3, -2]","[-5, -4, -3, -2]",False,True,2,,,PRE0142,aligned_samples,,S17-B01,S17-B01-C0171,170
+17,S17-P003,pre,source_estimator,bjs,-0.033840892449069057,0.16178334413896681,999,4,"[-5, -4, -3, -2]",False,,,,True,-0.076835327205028239,,,861,73,76,2.2704876155576073,"[-3, -2]","[-5, -4, -3, -2]",False,True,2,,,PRE0143,aligned_samples,,S17-B01,S17-B01-C0172,171
+17,S17-P003,pre,source_estimator,twfe,0.051220680333266391,0.13412768233889891,999,4,"[-5, -4, -3, -2]",False,,,,True,0.11629592035711643,,,861,73,76,2.2704876155576073,"[-3, -2]","[-5, -4, -3, -2]",True,False,2,,,PRE0144,baseline,,S17-B01,S17-B01-C0166,165
+17,S17-P003,pre,source_estimator,csa,0.076852854972400658,0.1739089931225771,999,4,"[-5, -4, -3, -2]",False,,,,True,0.17449345543508057,,,861,73,76,2.2704876155576073,"[-3, -2]","[-5, -4, -3, -2]",False,True,2,,,PRE0145,baseline,,S17-B01,S17-B01-C0167,166
+17,S17-P003,pre,source_estimator,bjs,-0.033840892449069057,0.16178334413896681,999,4,"[-5, -4, -3, -2]",False,,,,True,-0.076835327205028239,,,861,73,76,2.2704876155576073,"[-3, -2]","[-5, -4, -3, -2]",False,True,2,,,PRE0146,baseline,,S17-B01,S17-B01-C0168,167
+21,S21-P005,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0147,baseline,all_pre_periods_omitted,,,
+21,S21-P005,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0148,baseline,all_pre_periods_omitted,,,
+21,S21-P005,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0149,baseline,all_pre_periods_omitted,,,
+21,S21-P005,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0150,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P005,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0151,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P005,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0152,aligned_samples,all_pre_periods_omitted,,,
+21,S21-P005,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0153,aligned_samples,all_pre_periods_omitted,,,
+16,S16-P001,pre,source_estimator,twfe,0.065051174934392456,0.080281588856200306,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1872,94,,0.61005726806202354,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0154,baseline,,S16-B01,S16-B01-C0064,63
+16,S16-P001,pre,source_estimator,csa,0.073452660196619737,0.078047779781969695,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1872,94,,0.61005726806202354,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0155,baseline,,S16-B01,S16-B01-C0065,64
+16,S16-P001,pre,source_estimator,bjs,0.092117140762668373,0.079750941235580158,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1872,94,,0.61005726806202354,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0156,baseline,,S16-B01,S16-B01-C0066,65
+16,S16-P001,pre,exact_union_B,twfe_csa,0.092107030144577051,0.079711106788106112,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1872,94,,0.61005726806202354,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0157,aligned_samples,,S16-B01,S16-B01-C0067,66
+16,S16-P001,pre,source_estimator,csa,0.073452660196619737,0.078047779781969695,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1872,94,,0.61005726806202354,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0158,aligned_samples,,S16-B01,S16-B01-C0068,67
+16,S16-P001,pre,exact_union_B,twfe_bjs,0.092117140762670829,0.079750941235580242,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1872,94,,0.61005726806202354,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0159,aligned_samples,,S16-B01,S16-B01-C0069,68
+16,S16-P001,pre,source_estimator,bjs,0.092117140762668373,0.079750941235580158,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1872,94,,0.61005726806202354,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0160,aligned_samples,,S16-B01,S16-B01-C0070,69
+16,S16-P002,pre,source_estimator,twfe,0.03612961571343587,0.083463670442016066,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,2100,100,,0.41442676800113726,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0161,baseline,,S16-B01,S16-B01-C0050,49
+16,S16-P002,pre,source_estimator,csa,0.05223063819997318,0.082247271488337811,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,2100,100,,0.41442676800113726,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0162,baseline,,S16-B01,S16-B01-C0051,50
+16,S16-P002,pre,source_estimator,bjs,0.045495397094177895,0.079111258395775749,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,2100,100,,0.41442676800113726,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0163,baseline,,S16-B01,S16-B01-C0052,51
+16,S16-P002,pre,exact_union_B,twfe_csa,0.045395722737075775,0.079093884291971506,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,2100,100,,0.41442676800113726,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0164,aligned_samples,,S16-B01,S16-B01-C0053,52
+16,S16-P002,pre,source_estimator,csa,0.05223063819997318,0.082247271488337811,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,2100,100,,0.41442676800113726,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0165,aligned_samples,,S16-B01,S16-B01-C0054,53
+16,S16-P002,pre,exact_union_B,twfe_bjs,0.045495397094179803,0.079111258395775833,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,2100,100,,0.41442676800113726,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0166,aligned_samples,,S16-B01,S16-B01-C0055,54
+16,S16-P002,pre,source_estimator,bjs,0.045495397094177895,0.079111258395775749,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,2100,100,,0.41442676800113726,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0167,aligned_samples,,S16-B01,S16-B01-C0056,55
+16,S16-P003,pre,source_estimator,twfe,-0.0074339816779363105,0.090357693120947893,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1990,95,,0.43388109117583812,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0168,baseline,,S16-B01,S16-B01-C0078,77
+16,S16-P003,pre,source_estimator,csa,0.001514693568163424,0.092079410579675211,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1990,95,,0.43388109117583812,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0169,baseline,,S16-B01,S16-B01-C0079,78
+16,S16-P003,pre,source_estimator,bjs,-0.010189018059115946,0.084553756669874983,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1990,95,,0.43388109117583812,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0170,baseline,,S16-B01,S16-B01-C0080,79
+16,S16-P003,pre,exact_union_B,twfe_csa,-0.010597997094630697,0.084540859709156618,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1990,95,,0.43388109117583812,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0171,aligned_samples,,S16-B01,S16-B01-C0081,80
+16,S16-P003,pre,source_estimator,csa,0.001514693568163424,0.092079410579675211,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1990,95,,0.43388109117583812,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0172,aligned_samples,,S16-B01,S16-B01-C0082,81
+16,S16-P003,pre,exact_union_B,twfe_bjs,-0.010189018059115885,0.084553756669874802,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1990,95,,0.43388109117583812,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0173,aligned_samples,,S16-B01,S16-B01-C0083,82
+16,S16-P003,pre,source_estimator,bjs,-0.010189018059115946,0.084553756669874983,999,5,"[-6, -5, -4, -3, -2]",False,,,,True,,,,1990,95,,0.43388109117583812,"[-6, -5, -4, -3, -2]","[-6, -5, -4, -3, -2]",,,5,CSA,False,PRE0174,aligned_samples,,S16-B01,S16-B01-C0084,83
+16,S16-P004,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0175,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P004,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0176,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P004,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0177,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P004,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0178,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P004,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0179,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P004,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0180,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P004,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0181,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P005,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0182,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P005,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0183,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P005,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0184,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P005,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0185,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P005,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0186,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P005,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0187,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P005,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0188,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P006,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0189,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P006,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0190,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P006,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0191,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P006,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0192,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P006,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0193,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P006,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0194,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P006,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0195,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P007,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0196,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P007,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0197,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P007,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0198,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P007,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0199,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P007,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0200,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P007,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0201,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P007,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0202,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P008,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0203,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P008,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0204,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P008,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0205,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P008,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0206,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P008,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0207,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P008,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0208,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P008,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0209,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P009,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0210,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P009,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0211,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P009,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0212,baseline,static_or_no_registered_pre_coefficient,,,
+16,S16-P009,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0213,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P009,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0214,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P009,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0215,aligned_samples,static_or_no_registered_pre_coefficient,,,
+16,S16-P009,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0216,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P001,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0217,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P001,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0218,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P001,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0219,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P001,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0220,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P001,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0221,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P001,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0222,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P001,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0223,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P002,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0224,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P002,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0225,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P002,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0226,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P002,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0227,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P002,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0228,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P002,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0229,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P002,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0230,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P003,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0231,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P003,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0232,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P003,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0233,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P003,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0234,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P003,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0235,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P003,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0236,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P003,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0237,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P004,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0238,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P004,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0239,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P004,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0240,baseline,static_or_no_registered_pre_coefficient,,,
+8,S08-P004,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0241,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P004,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0242,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P004,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0243,aligned_samples,static_or_no_registered_pre_coefficient,,,
+8,S08-P004,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0244,aligned_samples,static_or_no_registered_pre_coefficient,,,
+13,S13-P001,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0245,baseline,static_or_no_registered_pre_coefficient,,,
+13,S13-P001,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0246,baseline,static_or_no_registered_pre_coefficient,,,
+13,S13-P001,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0247,baseline,static_or_no_registered_pre_coefficient,,,
+13,S13-P001,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0248,aligned_samples,static_or_no_registered_pre_coefficient,,,
+13,S13-P001,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0249,aligned_samples,static_or_no_registered_pre_coefficient,,,
+13,S13-P001,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0250,aligned_samples,static_or_no_registered_pre_coefficient,,,
+13,S13-P001,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0251,aligned_samples,static_or_no_registered_pre_coefficient,,,
+15,S15-P001,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0252,baseline,static_or_no_registered_pre_coefficient,,,
+15,S15-P001,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0253,baseline,static_or_no_registered_pre_coefficient,,,
+15,S15-P001,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0254,baseline,static_or_no_registered_pre_coefficient,,,
+15,S15-P001,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0255,aligned_samples,static_or_no_registered_pre_coefficient,,,
+15,S15-P001,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0256,aligned_samples,static_or_no_registered_pre_coefficient,,,
+15,S15-P001,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0257,aligned_samples,static_or_no_registered_pre_coefficient,,,
+15,S15-P001,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0258,aligned_samples,static_or_no_registered_pre_coefficient,,,
+15,S15-P002,pre,source_estimator,twfe,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0259,baseline,static_or_no_registered_pre_coefficient,,,
+15,S15-P002,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0260,baseline,static_or_no_registered_pre_coefficient,,,
+15,S15-P002,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0261,baseline,static_or_no_registered_pre_coefficient,,,
+15,S15-P002,pre,exact_union_B,twfe_csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0262,aligned_samples,static_or_no_registered_pre_coefficient,,,
+15,S15-P002,pre,source_estimator,csa,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0263,aligned_samples,static_or_no_registered_pre_coefficient,,,
+15,S15-P002,pre,exact_union_B,twfe_bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0264,aligned_samples,static_or_no_registered_pre_coefficient,,,
+15,S15-P002,pre,source_estimator,bjs,,,0,0,[],False,,,,False,,,,,,,,[],[],,,0,,,PRE0265,aligned_samples,static_or_no_registered_pre_coefficient,,,

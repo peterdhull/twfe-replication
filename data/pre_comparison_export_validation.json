@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "rows": 88,
+  "specifications": 22,
+  "studies": 5,
+  "eligible_event_specifications": 28,
+  "availability_rows": 112,
+  "unavailable_pairs": 24,
+  "rows_by_family_estimator": [
+    {
+      "family": "aligned_samples",
+      "modern_estimator": "bjs",
+      "rows": 22
+    },
+    {
+      "family": "aligned_samples",
+      "modern_estimator": "csa",
+      "rows": 22
+    },
+    {
+      "family": "baseline",
+      "modern_estimator": "bjs",
+      "rows": 22
+    },
+    {
+      "family": "baseline",
+      "modern_estimator": "csa",
+      "rows": 22
+    }
+  ],
+  "common_horizon_metadata_checked": true,
+  "original_comparisons_unchanged": true,
+  "maximum_marginal_se_error": 5.551115123125783e-17,
+  "numerical_identity_candidates": 18,
+  "mixed_reference_pairs": 16,
+  "inference_uses_saved_normalized_pre_coordinates_not_published_native": true,
+  "concentration_diagnostics_complete": true,
+  "maximum_coefficient_point_reconstruction_error": 8.01879396217231e-13,
+  "original_treatment_comparisons_and_covariance_arrays_unchanged": true,
+  "unchanged_original_numerical_files": 30,
+  "unchanged_original_covariance_blocks": 23,
+  "final_table": "data/results/pre_comparisons.csv",
+  "retained_counts": [
+    {
+      "family": "aligned_samples",
+      "modern_estimator": "bjs",
+      "total": 22,
+      "retained": 22,
+      "excluded": 0,
+      "retained_fragile": 2,
+      "identities": 18
+    },
+    {
+      "family": "aligned_samples",
+      "modern_estimator": "csa",
+      "total": 22,
+      "retained": 22,
+      "excluded": 0,
+      "retained_fragile": 4,
+      "identities": 0
+    },
+    {
+      "family": "baseline",
+      "modern_estimator": "bjs",
+      "total": 22,
+      "retained": 22,
+      "excluded": 0,
+      "retained_fragile": 7,
+      "identities": 0
+    },
+    {
+      "family": "baseline",
+      "modern_estimator": "csa",
+      "total": 22,
+      "retained": 22,
+      "excluded": 0,
+      "retained_fragile": 4,
+      "identities": 0
+    }
+  ]
+}
