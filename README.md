@@ -1,7 +1,8 @@
-# TWFE, CSA, and BJS: figure replication
+# Comparing TWFE, CSA, and BJS: Replication
 
-This repository reproduces the anonymized baseline and aligned-sample figures
-from saved estimates. It also contains estimate-level bootstrap draws and
+This repository reproduces the baseline and aligned-sample figures
+from ``Two-Way Fixed Effects and Modern
+Difference-in-Differences: An Empirical Comparison,'' by Peter Hull. It also contains estimate-level bootstrap draws and
 covariance blocks for further analysis. It contains **no observation-level
 estimation data** and does not re-estimate models from raw observations.
 
