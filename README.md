@@ -96,7 +96,7 @@ data/provenance/      study citations and source specification/coordinate labels
 src/didfigures/       standalone screening, summaries, and plotting
 tests/                numerical, covariance, and package checks
 docs/                 data dictionary, methods, and release boundaries
-paper/figures/        standalone figure assets (no manuscript source or PDF)
+paper/               manuscript LaTeX source, compiled PDF, and figure assets
 reference/            frozen expected summaries and release validation
 outputs/              regenerated results (ignored by Git)
 ```
@@ -136,9 +136,13 @@ Use DOI links and source specification labels when comparing releases.
 ## Figure assets and manuscript status
 
 `paper/figures/` contains standalone PGF and vector PDF figure assets.
-The draft manuscript LaTeX and compiled manuscript PDF are withheld from the
-current release while the author makes final edits. Neither LaTeX nor Stata/R
-is needed to regenerate the Python figures.
+The author-authorized manuscript source is [paper/did_reanalysis.tex](paper/did_reanalysis.tex),
+and the compiled paper is [paper/did_reanalysis.pdf](paper/did_reanalysis.pdf).
+Neither LaTeX nor Stata/R is needed to regenerate the Python figures.
+
+To compile the manuscript with a LaTeX installation that includes PGF, run
+`pdflatex -no-shell-escape did_reanalysis.tex` twice from the `paper/` directory.
+The figure code is kept in the external `paper/figures/*.pgf` files.
 
 ## Licensing and publication status
 

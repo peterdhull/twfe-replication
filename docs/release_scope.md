@@ -18,6 +18,8 @@ design diagnostics from observation-level source data.
   mappings, with the covariance boundaries stated explicitly.
 - Standalone Python code, pinned dependencies, policy configuration, tests,
   and standalone figure assets.
+- The author-authorized manuscript LaTeX source and compiled PDF under `paper/`,
+  including the author's intended public contact address.
 
 ## Excluded
 
@@ -28,9 +30,6 @@ design diagnostics from observation-level source data.
   raw outcome arrays, and the private filesystem/source-file crosswalk.
 - Original filesystem paths, private download URLs or access tokens, and
   historical working-directory artifacts.
-- Draft manuscript LaTeX and the compiled manuscript PDF, withheld from the
-  current release pending the author's final edits. Separate figure assets
-  are included.
 
 Some inputs used upstream were author-supplied and are not cleared for online
 redistribution. They remain outside this repository. No claim that this release

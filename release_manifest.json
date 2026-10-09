@@ -1,10 +1,10 @@
 {
   "release": "v0.3.0",
   "snapshot_date": "2026-10-09",
-  "scope": "Saved estimates, estimator draws/covariances, figure code/assets, and public study provenance; no observation-level inputs or manuscript",
+  "scope": "Saved estimates, estimator draws/covariances, figure code/assets, public study provenance, and author-authorized manuscript source/PDF; no observation-level inputs",
   "observation_level_data_included": false,
-  "manuscript_pdf_withheld_pending_author_edits": true,
-  "manuscript_source_withheld_pending_author_edits": true,
+  "manuscript_pdf_included": true,
+  "manuscript_source_included": true,
   "files": [
     {
       "path": ".gitattributes",
@@ -13,8 +13,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 449,
-      "sha256": "732b2346d577f9f2dd7ee2475d619757551057bbf0764c09451c5c7a3303d2a7"
+      "bytes": 407,
+      "sha256": "c58f02e7ac4fc7b6766ace9c581de157b18edd711b4a2fcabcaa30c1c8a0d516"
     },
     {
       "path": "config/figures.json",
@@ -238,13 +238,23 @@
     },
     {
       "path": "docs/release_scope.md",
-      "bytes": 2926,
-      "sha256": "5bc443fa6cc7686f3b2160f1207c26cd0511a0418a20ccb00031a8645e6a49ec"
+      "bytes": 2898,
+      "sha256": "6dc611fa0f36932827f88c0a97f8b0b4d4bbc238f09cdd4bb807212e04c8d1f1"
     },
     {
       "path": "LICENSE.md",
       "bytes": 374,
       "sha256": "c4f56e7b0731e252c178fd5083e1f557a6a42fe07782f473a96bdc1c67c77c1f"
+    },
+    {
+      "path": "paper/did_reanalysis.pdf",
+      "bytes": 1382981,
+      "sha256": "c4bb4b7b30e12574f3203a9e1c4bdcd0510d7001d992cc157bc037d07353e9f0"
+    },
+    {
+      "path": "paper/did_reanalysis.tex",
+      "bytes": 31793,
+      "sha256": "cdb8835dc1dc51d545ecccf1244d255023130e3fc5b8e0af259a2273e6e5c21e"
     },
     {
       "path": "paper/figures/aligned_samples.pdf",
@@ -273,8 +283,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7200,
-      "sha256": "c47b15542da0013d7bf8b29c3e8f1bbad4bbc0beaf7bd8f5cf98d478dfb2254b"
+      "bytes": 7476,
+      "sha256": "b406e30759375c64181602f2833794ea6ce7df879c9179725e376c3870c6da40"
     },
     {
       "path": "reference/expected_summary.json",
