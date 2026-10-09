@@ -10,7 +10,7 @@ design diagnostics from observation-level source data.
 
 - All available baseline and aligned treatment-effect estimator pairs, including
   pairs excluded by the figure screen.
-- Stable-ID study/specification metadata, paired pooled pre comparisons, and
+- Within-release study/specification IDs, paired pooled pre comparisons, and
   explicit pre-comparison availability records.
 - Study citations, official DOI links, recorded specification descriptions,
   source specification IDs, and descriptive covariance-coordinate labels.
@@ -35,6 +35,13 @@ design diagnostics from observation-level source data.
 Some inputs used upstream were author-supplied and are not cleared for online
 redistribution. They remain outside this repository. No claim that this release
 provides complete raw-data replication is made.
+
+Version 0.3.0 adds two static banking targets from *Corruption and Firms* and
+fourteen static targets from the public-source portions of *Strict ID Laws
+Don't Stop Voters*. The Voter ID study's remaining three Catalist targets and
+the Corruption and Firms study's other targets are not represented as completed
+comparisons. Promised author deliveries for other papers add no estimates to
+this release.
 
 The user authorized named study provenance in this repository. Default figure
 labels remain anonymous, while `data/provenance/` supplies their bibliographic

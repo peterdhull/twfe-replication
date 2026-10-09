@@ -30,6 +30,14 @@ def read_csv(relative):
     return pd.read_csv(ROOT / relative, float_precision="round_trip")
 
 
+def study_id_for_doi(doi):
+    rows = read_csv("data/provenance/studies.csv")
+    selected = rows.loc[rows.source_url.eq("https://doi.org/" + doi), "study_id"]
+    if len(selected) != 1:
+        raise AssertionError((doi, selected.tolist()))
+    return int(selected.iloc[0])
+
+
 class ScreenRules(unittest.TestCase):
     """Small counterexamples catch boundary, sign, and identity-rule changes."""
 
@@ -111,12 +119,12 @@ class FrozenRelease(unittest.TestCase):
         cls.decisions = screen_comparisons(cls.comparisons, read_json("config/screen.json"))
 
     def test_complete_anonymous_indices_and_availability(self):
-        self.assertEqual(len(self.comparisons), 1332)
-        self.assertEqual(len(self.specifications), 335)
+        self.assertEqual(len(self.comparisons), 1396)
+        self.assertEqual(len(self.specifications), 351)
         self.assertEqual(len(self.auxiliary), 48)
-        self.assertEqual(len(self.studies), 22)
-        self.assertEqual(len(self.coordinates), 2829)
-        self.assertEqual(len(self.pre), 265)
+        self.assertEqual(len(self.studies), 24)
+        self.assertEqual(len(self.coordinates), 2957)
+        self.assertEqual(len(self.pre), 393)
         self.assertEqual(int(self.pre.available.sum()), 138)
         for table, identifier in ((self.studies, "study_id"), (self.specifications, "specification_id"),
                                   (self.coordinates, "coordinate_id"), (self.comparisons, "comparison_id"),
@@ -144,8 +152,8 @@ class FrozenRelease(unittest.TestCase):
                      "gap_screen_warning", "screen_fragile", "screen_status"):
             pd.testing.assert_series_equal(self.decisions[name], self.comparisons[name], check_dtype=False)
         kept = self.decisions.loc[~self.decisions.screen_exclude]
-        self.assertEqual(kept.study_id.nunique(), 20)
-        self.assertEqual(kept.specification_id.nunique(), 275)
+        self.assertEqual(kept.study_id.nunique(), self.expected["retained_studies"])
+        self.assertEqual(kept.specification_id.nunique(), self.expected["retained_specifications"])
         summary = annotation_summary(kept).set_index(["family", "modern_estimator"])
         for family, estimators in self.expected["families"].items():
             for estimator, expected in estimators.items():
@@ -170,6 +178,8 @@ class FrozenRelease(unittest.TestCase):
         self.assertFalse(studies.study_id.duplicated().any())
         self.assertTrue(studies[["title", "journal", "publication_year", "source_url"]].notna().all().all())
         self.assertTrue(studies.source_url.str.startswith("https://doi.org/").all())
+        self.assertEqual(studies.sort_values("study_id").publication_year.tolist(),
+                         sorted(studies.publication_year.tolist()))
         pd.testing.assert_series_equal(studies.set_index("study_id").publication_year.sort_index(),
                                        self.studies.set_index("study_id").publication_year.sort_index())
         self.assertFalse(specs.specification_id.duplicated().any())
@@ -184,9 +194,28 @@ class FrozenRelease(unittest.TestCase):
         self.assertEqual(set(labels.coordinate_id), set(self.coordinates.coordinate_id))
         self.assertTrue(labels.source_coordinate_label.notna().all())
 
+    def test_new_studies_have_recorded_descriptions_and_static_targets(self):
+        studies = read_csv("data/provenance/studies.csv")
+        specs = read_csv("data/provenance/specifications.csv")
+        for doi, year, count, cluster in (("10.1093/qje/qjab019", 2021, 14, "State"),
+                                          ("10.1093/restud/rdab040", 2022, 2, "Municipality")):
+            study = study_id_for_doi(doi)
+            self.assertEqual(int(studies.loc[studies.study_id.eq(study), "publication_year"].iloc[0]), year)
+            numerical = self.specifications.loc[self.specifications.study_id.eq(study)]
+            self.assertEqual(len(numerical), count)
+            self.assertTrue(numerical.summary_period.eq("static").all())
+            descriptive = specs.loc[specs.study_id.eq(study) & specs.role.eq("active_comparison")]
+            self.assertEqual(len(descriptive), count)
+            self.assertTrue(descriptive[["published_source_location", "outcome_variable", "treatment_label",
+                                         "unit_fixed_effects", "time_fixed_effects", "published_clustering"]].notna().all().all())
+            self.assertTrue(descriptive.published_clustering.str.casefold().str.contains(cluster.casefold()).all())
+            pre = self.pre.loc[self.pre.study_id.eq(study)]
+            self.assertEqual(len(pre), 8 * count)
+            self.assertFalse(pre.available.any())
+
     def test_every_covariance_block_and_pair_mapping(self):
-        self.assertEqual(len(self.manifest["blocks"]), 23)
-        self.assertEqual({x["study_id"] for x in self.manifest["blocks"]}, set(range(1, 23)))
+        self.assertEqual(len(self.manifest["blocks"]), 25)
+        self.assertEqual({x["study_id"] for x in self.manifest["blocks"]}, set(self.studies.study_id))
         self.assertIn("unavailable; not zero", self.manifest["cross_block_covariance"])
         self.assertIn("only within one block", self.manifest["cross_block_covariance"])
         block_ids = {x["covariance_block_id"] for x in self.manifest["blocks"]}
@@ -245,6 +274,11 @@ class PooledPreRelease(unittest.TestCase):
         cls.expected = read_json("reference/expected_summary.json")
         cls.coords = read_csv("data/covariance/coordinates.csv").set_index("coordinate_id")
         cls.diagnostics = read_csv("data/results/pooled_pre.csv").set_index("diagnostic_id")
+        cls.source_specifications = read_csv("data/provenance/specifications.csv").set_index("specification_id").source_specification_id
+        cls.study_roles = {role: study_id_for_doi(doi) for role, doi in {
+            "curriculum": "10.1086/690951", "gift": "10.1257/aer.20230008",
+            "munoz": "10.1093/qje/qjad032", "fiscal": "10.3982/ECTA20612",
+            "credit": "10.1086/729065"}.items()}
 
     def test_complete_availability_and_no_extra_specifications(self):
         availability = read_csv("data/results/pre_comparison_availability.csv")
@@ -252,12 +286,12 @@ class PooledPreRelease(unittest.TestCase):
         self.assertEqual(len(availability), 112)
         self.assertEqual(len(self.pre), 88)
         self.assertEqual(self.pre.specification_id.nunique(), 22)
-        self.assertEqual(set(self.pre.study_id), {1, 16, 17, 18, 20})
+        self.assertEqual(set(self.pre.study_id), set(self.study_roles.values()))
         self.assertTrue(self.pre.summary_period.eq("pre").all())
         self.assertTrue(self.pre.specification_type.eq("event_study_pre_average").all())
         self.assertFalse(self.all_pairs.duplicated(key).any())
-        self.assertEqual(self.all_pairs.specification_id.nunique(), 335)
-        self.assertEqual(len(self.all_pairs), 1420)
+        self.assertEqual(self.all_pairs.specification_id.nunique(), 351)
+        self.assertEqual(len(self.all_pairs), 1484)
         event_specs = set(self.treatment.loc[self.treatment.summary_period.eq("post"), "specification_id"])
         self.assertEqual(len(event_specs), 28)
         self.assertEqual(set(availability.specification_id), event_specs)
@@ -265,7 +299,8 @@ class PooledPreRelease(unittest.TestCase):
         self.assertTrue(set(self.pre.specification_id) <= event_specs)
         np.testing.assert_array_equal(availability.available, availability.twfe_available & availability.modern_available)
         self.assertTrue(availability.loc[~availability.available, "unavailable_reason_code"].notna().all())
-        self.assertEqual(set(availability.loc[~availability.available, "study_id"]), {11, 21})
+        self.assertEqual(set(availability.loc[~availability.available, "study_id"]), {
+            study_id_for_doi("10.1093/qje/qjab023"), study_id_for_doi("10.3982/ECTA17951")})
         for (_, _), group in self.pre.groupby(["family", "modern_estimator"]):
             self.assertEqual(len(group), 22)
         self.assertTrue(self.pre.original_target_rows.isna().all())
@@ -282,17 +317,19 @@ class PooledPreRelease(unittest.TestCase):
             self.assertTrue(set(common) <= set(registered))
             self.assertEqual(common != registered, row.horizon_shortened)
             self.assertTrue(all(term == "le_m2" or (isinstance(term, int) and term < -1) for term in common))
-            if row.study_id == 1:
+            if row.study_id == self.study_roles["curriculum"]:
                 self.assertEqual(common, ["le_m2"])
-            elif row.study_id == 16:
+            elif row.study_id == self.study_roles["gift"]:
                 self.assertEqual(common, list(range(-6, -1)))
-            elif row.study_id == 17:
-                self.assertEqual(common, [-3, -2] if row.specification_id == "S17-P003" else [-5, -4, -3, -2])
-            elif row.study_id == 18:
+            elif row.study_id == self.study_roles["munoz"]:
+                source_id = self.source_specifications[row.specification_id]
+                self.assertEqual(common, [-3, -2] if source_id == "TN-F2-ORIGINDESTYEAR" else [-5, -4, -3, -2])
+            elif row.study_id == self.study_roles["fiscal"]:
                 self.assertEqual(common, list(range(-10, -1)))  # Published bin codes, not calendar years.
-            elif row.study_id == 20:
+            elif row.study_id == self.study_roles["credit"]:
                 self.assertEqual(common, list(range(-20, -1)))
-        np.testing.assert_array_equal(self.pre.reference_not_pure_untreated_baseline, self.pre.study_id.eq(18))
+        np.testing.assert_array_equal(self.pre.reference_not_pure_untreated_baseline,
+                                      self.pre.study_id.eq(self.study_roles["fiscal"]))
         self.assertEqual(int(self.pre.reference_not_pure_untreated_baseline.sum()), 16)
 
     def test_pre_pairs_use_saved_pre_coordinates_and_joint_draws(self):
@@ -323,7 +360,7 @@ class PooledPreRelease(unittest.TestCase):
         actual = screen_comparisons(self.pre, self.policy)
         for name in ("screen_exclude", "screen_fragile", "screen_status", "gap_structural_identity"):
             pd.testing.assert_series_equal(actual[name], self.pre[name], check_dtype=False)
-        identical = actual.loc[actual.family.eq("aligned_samples") & actual.modern_estimator.eq("bjs") & actual.study_id.ne(18)]
+        identical = actual.loc[actual.family.eq("aligned_samples") & actual.modern_estimator.eq("bjs") & actual.study_id.ne(self.study_roles["fiscal"])]
         self.assertEqual(len(identical), 18)
         self.assertTrue(identical.gap_structural_identity.all())
         self.assertFalse(identical.gap_screen_warning.any())
@@ -337,8 +374,10 @@ class PooledPreRelease(unittest.TestCase):
         labels = read_csv("data/provenance/coordinate_labels.csv").set_index("coordinate_id").source_coordinate_label
         specs = read_csv("data/provenance/specifications.csv").set_index("specification_id").source_specification_id
         lookup = dict(zip(self.coords.index.map(labels), self.coords.coordinate_index))
-        with np.load(ROOT / "data/covariance/S17-B01.npz", allow_pickle=False) as block:
-            for row in self.pre.loc[self.pre.study_id.eq(17)].itertuples():
+        munoz = self.pre.loc[self.pre.study_id.eq(self.study_roles["munoz"])]
+        self.assertEqual(munoz.covariance_block_id.nunique(), 1)
+        with np.load(ROOT / "data/covariance" / (munoz.covariance_block_id.iloc[0] + ".npz"), allow_pickle=False) as block:
+            for row in munoz.itertuples():
                 terms = json.loads(row.common_horizons)
                 for role in ("twfe", "modern"):
                     estimator = row.modern_estimator if role == "modern" else "twfe"

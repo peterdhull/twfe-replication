@@ -1,18 +1,53 @@
 {
-  "version": "2026-10-08",
-  "source_studies": 22,
-  "source_specifications": 335,
-  "source_pairs_per_family": {"csa": 331, "bjs": 335},
-  "retained_studies": 20,
-  "retained_specifications": 275,
+  "version": "2026-10-09",
+  "source_studies": 24,
+  "source_specifications": 351,
+  "source_pairs_per_family": {
+    "bjs": 351,
+    "csa": 347
+  },
+  "retained_studies": 22,
+  "retained_specifications": 285,
   "families": {
-    "baseline": {
-      "csa": {"pairs": 241, "studies": 18, "fragile": 56, "reversals": 28, "significant": 21, "significant_reversals": 3, "twfe_se_capped": 32},
-      "bjs": {"pairs": 266, "studies": 20, "fragile": 68, "reversals": 15, "significant": 42, "significant_reversals": 3, "twfe_se_capped": 43}
-    },
     "aligned_samples": {
-      "csa": {"pairs": 241, "studies": 18, "fragile": 54, "reversals": 35, "significant": 20, "significant_reversals": 0, "twfe_se_capped": 31},
-      "bjs": {"pairs": 266, "studies": 20, "fragile": 66, "reversals": 15, "significant": 29, "significant_reversals": 3, "twfe_se_capped": 41}
+      "bjs": {
+        "pairs": 275,
+        "studies": 22,
+        "fragile": 73,
+        "reversals": 18,
+        "significant": 29,
+        "significant_reversals": 3,
+        "twfe_se_capped": 41
+      },
+      "csa": {
+        "pairs": 251,
+        "studies": 20,
+        "fragile": 62,
+        "reversals": 40,
+        "significant": 20,
+        "significant_reversals": 0,
+        "twfe_se_capped": 31
+      }
+    },
+    "baseline": {
+      "bjs": {
+        "pairs": 275,
+        "studies": 22,
+        "fragile": 75,
+        "reversals": 18,
+        "significant": 42,
+        "significant_reversals": 3,
+        "twfe_se_capped": 43
+      },
+      "csa": {
+        "pairs": 251,
+        "studies": 20,
+        "fragile": 64,
+        "reversals": 33,
+        "significant": 22,
+        "significant_reversals": 4,
+        "twfe_se_capped": 32
+      }
     }
   }
 }

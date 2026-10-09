@@ -1,20 +1,20 @@
 {
   "status": "PASS",
-  "studies": 22,
-  "specifications": 335,
-  "comparison_rows": 1332,
-  "covariance_blocks": 23,
-  "coordinates": 2829,
+  "studies": 24,
+  "specifications": 351,
+  "comparison_rows": 1396,
+  "covariance_blocks": 25,
+  "coordinates": 2957,
   "draws_per_block": 999,
-  "pooled_pre_rows": 265,
+  "pooled_pre_rows": 393,
   "available_pooled_pre_rows": 138,
   "auxiliary_specifications": 48,
   "maximum_pair_inference_error": 2.220446049250313e-16,
-  "identifier_policy": "Numerical files retain stable study/specification identifiers; authorized bibliographic and descriptive source mappings are in data/provenance.",
+  "identifier_policy": "Numerical files use chronological study/specification identifiers fixed within this release; DOI and descriptive source mappings in data/provenance retain identity across releases.",
   "public_provenance": {
-    "studies": 22,
-    "specifications": 383,
-    "coordinate_labels": 2829,
+    "studies": 24,
+    "specifications": 399,
+    "coordinate_labels": 2957,
     "private_paths_or_author_links_included": false
   }
 }

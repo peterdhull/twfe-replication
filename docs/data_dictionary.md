@@ -7,15 +7,15 @@ contrasts or covariances.
 
 ## Numerical result tables
 
-`data/results/comparisons.csv` has 1,332 rows: one row per active specification,
-modern estimator, and sample family (666 rows per family). The unique scientific
+`data/results/comparisons.csv` has 1,396 rows: one row per active specification,
+modern estimator, and sample family (698 rows per family). The unique scientific
 key is `(specification_id, modern_estimator, family, summary_period)`; `comparison_id` is a
 convenience row identifier. All screen-excluded pairs are included.
 
 | Field(s) | Meaning |
 | --- | --- |
-| `study_id` | Stable integer ID 1--22, also used in the anonymized legends |
-| `specification_id` | `Sxx-Pyyy` stable active specification ID |
+| `study_id` | Integer ID 1--24, also used in the anonymized legends; fixed within this release |
+| `specification_id` | `Sxx-Pyyy` active specification ID, fixed within this release |
 | `family` | `baseline` or `aligned_samples` |
 | `specification_type`, `summary_period` | Source adapter's type; treatment summary is `static` or `post` |
 | `modern_estimator` | `csa` or `bjs` |
@@ -54,14 +54,19 @@ convenience row identifier. All screen-excluded pairs are included.
 | `twfe_coordinate_id`, `modern_coordinate_id` | Foreign keys into `data/covariance/coordinates.csv` |
 | `twfe_coordinate_index`, `modern_coordinate_index` | **Zero-based** draw-column/covariance-row indices |
 
-`studies.csv` supplies the 22 stable IDs, publication years, fixed colors, and
+`studies.csv` supplies the 24 IDs, journal publication years, fixed colors, and
 `draw_order_tiebreak`. The last field preserves the original layering of
 overlapping points; it has no statistical interpretation. `specifications.csv`
-contains the 335 active specifications and their scalar/post distinction.
+contains the 351 active specifications and their scalar/post distinction.
+Study numbers are assigned chronologically by journal year, with the source
+registry order breaking ties. The version 0.3.0 additions are Study 12
+(Cantoni and Pons, QJE 2021) and Study 14 (Colonnelli and Prem, RESTUD 2022).
+IDs can therefore change between releases when earlier-year studies are added;
+DOI and source specification labels in `data/provenance/` retain the identities.
 
 `auxiliary_specifications.csv` documents 48 additional specifications retained
 inside the complete source covariance blocks. They do **not** increase the
-active 335-specification sample or appear in the treatment-effect figures.
+active 351-specification sample or appear in the treatment-effect figures.
 
 `pre_comparisons.csv` adds 88 paired pre-treatment summaries: 22 event-study
 specifications in five studies, with CSA and BJS in each sample family. Its
@@ -75,8 +80,8 @@ the 28 event specifications; 24 are unavailable, never zero-filled.
 
 Pre rows record the actual common bins, the registered bins, and
 `reference_not_pure_untreated_baseline`. Numeric bin labels need not denote
-single years: Study 18 retains decade bins and the mixed reference `(-10,0]`.
-Study 1's `le_m2` and Study 17's `-5` are open-ended bins. Human-readable
+single years: Study 20 retains decade bins and the mixed reference `(-10,0]`.
+Study 1's `le_m2` and Study 19's `-5` are open-ended bins. Human-readable
 definitions are in `pre_window_definition`, `pre_reference_definition`,
 and `pre_diagnostic_type`. Treatment-target
 counts/shares are not copied into pre rows. Their blank values do not mean
@@ -85,7 +90,7 @@ against the saved points; post-period concentration metrics are not reused.
 
 ## Pooled pre-treatment diagnostics
 
-`pooled_pre.csv` has 265 saved diagnostic/availability records. Of these, 138
+`pooled_pre.csv` has 393 saved diagnostic/availability records. Of these, 138
 have a complete estimate and are linked to a covariance coordinate. Rows with
 `available=False` are availability records, not zero estimates. The table
 preserves family, coordinate/estimator role, pre-term counts/lists, estimates,
@@ -95,10 +100,12 @@ flags mixed-reference interpretations. Raw-unit/native fields are explicitly
 prefixed `raw_` or `native_`; missing fields remain blank.
 The default figures select paired comparison coordinates through
 `pre_comparisons.csv`, not every native/auxiliary row of this diagnostic table.
+The sixteen static additions contribute 128 explicit unavailable records;
+they do not change the existing available pre estimates or create event vectors.
 
 ## Covariance blocks
 
-`data/covariance/blocks.json` lists 23 active blocks for 22 studies. A block's
+`data/covariance/blocks.json` lists 25 active blocks for 24 studies. A block's
 NPZ file contains exactly three numeric arrays:
 
 | Array | Shape | Meaning |
@@ -107,7 +114,7 @@ NPZ file contains exactly three numeric arrays:
 | `draws` | `(999, K)` | Joint **estimate** draws; columns index estimator coordinates |
 | `covariance` | `(K, K)` | Sample covariance of the estimate draws (`ddof=1`) |
 
-`coordinates.csv` labels all 2,829 coordinates with neutral IDs, study and
+`coordinates.csv` labels all 2,957 coordinates with neutral IDs, study and
 specification IDs, sample family, estimator, summary period/event term, point,
 SE, and `used_by_active_comparison`. Complete source blocks preserve supporting
 native, coefficient-vector, pre-diagnostic, and archived-alignment coordinates.
@@ -150,7 +157,7 @@ with np.load(root / 'data/covariance' / f'{row.covariance_block_id}.npz',
 
 `data/provenance/studies.csv` gives titles, compact authors, journal/year,
 citations, and official DOI links. `specifications.csv` maps active and
-auxiliary stable IDs to source specification labels and verified descriptive
+auxiliary release IDs to source specification labels and verified descriptive
 metadata where available. `coordinate_labels.csv` maps neutral covariance IDs
 to descriptive source coordinate labels. These labels do not change numerical
 keys or the anonymized figure presentation. Blank descriptions are not inferred.

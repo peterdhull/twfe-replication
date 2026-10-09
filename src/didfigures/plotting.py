@@ -1,4 +1,4 @@
-"""Standalone anonymous scatter renderer; no raw data or study identities needed."""
+"""Standalone scatter renderer with optional public bibliographic labels."""
 
 from pathlib import Path
 
@@ -21,7 +21,7 @@ plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 9,
 
 
 def render(data, studies, bounds, destination, scale, capped, source_pairs, policy,
-           figure_config=None):
+           figure_config=None, named=False):
     """Write PNG, SVG, and PDF with independently computed screen/marker fields."""
     destination = Path(destination)
     figure_config = figure_config or {}
@@ -31,9 +31,16 @@ def render(data, studies, bounds, destination, scale, capped, source_pairs, poli
     papers = sorted(data.study_id.unique())
     if not set(papers).issubset(study_meta.index):
         raise ValueError("Missing study metadata")
+    if named:
+        required = ["short_title", "short_citation", "source_url"]
+        if not set(required).issubset(study_meta.columns) or study_meta.loc[papers, required].isna().any().any():
+            raise ValueError("Named figures require complete public study provenance")
+        if not study_meta.loc[papers, "source_url"].str.startswith("https://doi.org/").all():
+            raise ValueError("Named figure links must be official DOI URLs")
     colors = study_meta.color.to_dict()
-    fig, axes = plt.subplots(1, 2, figsize=(14, 9.6))
-    fig.subplots_adjust(left=.066, right=.973, top=.895, bottom=.305, wspace=.20)
+    fig, axes = plt.subplots(1, 2, figsize=(14, 10.8) if named else (14, 9.6))
+    fig.subplots_adjust(left=.066, right=.973, top=.875 if named else .895,
+                        bottom=.375 if named else .305, wspace=.20)
     threshold = float(policy.get("pointwise_abs_t_threshold", 1.96))
     fig.text(.066, .975,
              f"{len(papers)} studies · Filled: paired |t| > {threshold:g} · Hollow: otherwise · Cross: fragile inference",
@@ -152,15 +159,23 @@ def render(data, studies, bounds, destination, scale, capped, source_pairs, poli
     column_counts = [quotient + int(col < remainder) for col in range(columns)]
     legend_rows = max(column_counts)
     positions = [(col, row) for col, count in enumerate(column_counts) for row in range(count)]
-    legend_top = .235 if legend_rows <= 6 else .251
+    legend_top = (.291 if legend_rows <= 6 else .307) if named else (.235 if legend_rows <= 6 else .251)
     legend_step = (legend_top - .143) / max(1, legend_rows - 1)
     for study, (col, row) in zip(order, positions):
         x, y = .077 + col * (.924 / columns), legend_top - row * legend_step
         dot = Line2D([x], [y+.001], marker="o", linestyle="", markersize=5.5,
                      markerfacecolor=colors[study], markeredgecolor="none", transform=fig.transFigure)
         fig.add_artist(dot)
-        legend_artists.append(fig.text(x+.012, y-.002,
-            f"Study {study} ({int(study_meta.loc[study, 'publication_year'])})", fontsize=9.5, va="center"))
+        if named:
+            title = fig.text(x+.012, y+.003, study_meta.loc[study, "short_title"],
+                             fontsize=8.4, va="bottom")
+            citation = fig.text(x+.012, y-.009, study_meta.loc[study, "short_citation"],
+                                fontsize=7.2, color="#61717D", va="bottom")
+            citation.set_url(study_meta.loc[study, "source_url"])
+            legend_artists.extend([title, citation])
+        else:
+            legend_artists.append(fig.text(x+.012, y-.002,
+                f"Study {study} ({int(study_meta.loc[study, 'publication_year'])})", fontsize=9.5, va="center"))
     hard, warning = policy["hard_exclusion"], policy["warning"]
     notes = [
         "Notes: Circles: static specifications. Squares: event-study averages, with pre and post entering separately. Pre averages are diagnostics, not treatment effects.",
@@ -231,6 +246,9 @@ def render(data, studies, bounds, destination, scale, capped, source_pairs, poli
         assert 0 <= bbox.x0 <= bbox.x1 <= fig.bbox.width
         assert 0 <= bbox.y0 <= bbox.y1 <= fig.bbox.height
         assert not any(bbox.overlaps(ax.xaxis.label.get_window_extent(renderer)) for ax in axes)
+    if named:
+        boxes = [artist.get_window_extent(renderer) for artist in legend_artists]
+        assert not any(box.overlaps(other) for i, box in enumerate(boxes) for other in boxes[i+1:]), "Named legend labels overlap"
     for ax in axes:
         transform = ax.transData.transform
         np.testing.assert_allclose(np.linalg.norm(transform([1, 0])-transform([0, 0])),
@@ -267,6 +285,10 @@ def render(data, studies, bounds, destination, scale, capped, source_pairs, poli
         if extension not in ("png", "svg", "pdf"):
             raise ValueError(f"Unsupported output format: {extension}")
         fig.savefig(destination.with_suffix("." + extension), dpi=190, facecolor="white")
-    assert not any(a.get_url() for a in fig.findobj() if hasattr(a, "get_url"))
+    links = {a.get_url() for a in fig.findobj() if hasattr(a, "get_url") and a.get_url()}
+    if named:
+        assert links.issubset(set(study_meta.loc[papers, "source_url"]))
+    else:
+        assert not links
     plt.close(fig)
     return checks

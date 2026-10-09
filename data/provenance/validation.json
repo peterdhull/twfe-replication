@@ -1,12 +1,12 @@
 {
   "status": "PASS",
-  "studies": 22,
-  "specifications": 383,
-  "coordinate_labels": 2829,
-  "active_specifications": 335,
+  "studies": 24,
+  "specifications": 399,
+  "coordinate_labels": 2957,
+  "active_specifications": 351,
   "auxiliary_specifications": 48,
-  "specifications_with_recorded_locations": 152,
-  "specifications_with_recorded_outcomes": 136,
+  "specifications_with_recorded_locations": 168,
+  "specifications_with_recorded_outcomes": 152,
   "numerical_data_unchanged": true,
   "private_paths_or_author_links_included": false
 }

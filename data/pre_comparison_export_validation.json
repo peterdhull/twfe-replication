@@ -37,8 +37,8 @@
   "concentration_diagnostics_complete": true,
   "maximum_coefficient_point_reconstruction_error": 8.01879396217231e-13,
   "original_treatment_comparisons_and_covariance_arrays_unchanged": true,
-  "unchanged_original_numerical_files": 30,
-  "unchanged_original_covariance_blocks": 23,
+  "unchanged_original_numerical_files": 32,
+  "unchanged_original_covariance_blocks": 25,
   "final_table": "data/results/pre_comparisons.csv",
   "retained_counts": [
     {

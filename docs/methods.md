@@ -14,7 +14,7 @@ identifiable targets. An aligned TWFE coordinate uses the exact union of rows
 used by that modern estimator, including relevant baseline/control/nuisance
 rows. Equal rows do not imply equal estimands or weights.
 
-The source release has 335 specifications (307 scalar and 28 post event-study
+The source release has 351 specifications (323 scalar and 28 post event-study
 averages). A dynamic comparison averages registered bins over common
 structurally estimable horizons. The full joint regression is retained upstream.
 Pre averages enter as separate points alongside post averages, never pooled
@@ -24,9 +24,19 @@ native adjacent-period pre contrasts are not substituted. Ordinary BJS pre
 averages use an untreated-only joint lead regression, except for the preserved
 mixed-reference contrasts. Aligned TWFE/BJS pre pairs can consequently be
 algebraically identical. One
-Study 17 event window differs between sample families. Published mixed
+Study 19 (Muñoz) event window differs between sample families. Published mixed
 reference bins and the explicit unrestricted fixed-effect exception for
 Study 8 remain as documented in the paper.
+
+The two added banking specifications in Colonnelli and Prem (RESTUD, 2022)
+retain municipality and calendar-year fixed effects and municipality clustering.
+The fourteen added public-source specifications in Cantoni and Pons (QJE, 2021)
+retain their registered state-year designs, source-specific samples and controls,
+and state clustering. Original native estimates remain separate from comparison
+estimates where reversal removal changes the sample. Each study has a shared
+positive-weight bootstrap across its specifications and estimator/sample
+coordinates. The static additions have no manufactured pre averages or event
+coefficient vectors.
 
 ## Covariance and paired inference
 
@@ -85,6 +95,10 @@ the denominator. Significant-plus-reversal requires opposite nonzero point
 estimate signs and a filled marker; it does not require two individually
 significant coefficients. Tests are pointwise without multiplicity adjustment.
 Specifications are dependent within studies and are not given equal study
-weights. Stable colors and anonymous IDs are retained across panels and scales.
+weights. Colors and anonymous IDs are retained across panels and scales within
+a release. Anonymous numbering follows journal publication year, with source
+registry order breaking ties; earlier-year additions can renumber later studies
+between releases. DOI/source-specification mappings are the persistent study
+and specification identities.
 `--summaries treatment` or `--summaries pre` permits separate descriptive views;
 the default is both, and the export also gives annotation counts by period.

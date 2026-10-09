@@ -1,32 +1,69 @@
 {
-  "snapshot_date": "2026-10-08",
+  "snapshot_date": "2026-10-09",
   "status": "PASS",
   "environment": {
     "python": "3.12.14",
     "numpy": "2.3.5",
     "pandas": "3.0.1",
     "matplotlib": "3.11.2",
-    "installation": "Fresh virtual environment, pinned requirements.lock; no historical workspace dependency injection"
+    "installation": "Reused the clean virtual environment created October 8 with pinned requirements.lock; no historical workspace dependency injection"
   },
-  "release": "v0.2.0",
-  "standalone_tests": {"run": 16, "failures": 0, "errors": 0},
+  "release": "v0.3.0",
+  "standalone_tests": {"run": 18, "failures": 0, "errors": 0, "elapsed_seconds": 69.045},
   "figure_regeneration": {
-    "working_directory_outside_checkout": true,
-    "python_isolated_mode": true,
-    "figure_variants": 8,
-    "formats": ["png", "svg", "pdf"],
-    "pre_averages_included": true,
-    "static_and_event_shapes_distinguished": true,
-    "input_hashes_unchanged": true
+    "isolated_public_cli_tests": {
+      "working_directory_outside_checkout": true,
+      "python_isolated_mode": true,
+      "scope": "Capped TWFE-SE figures for both sample families, anonymous and named",
+      "anonymous_variants": 2,
+      "named_variants": 2,
+      "formats": ["png", "svg", "pdf"],
+      "named_anonymous_numerical_tables_identical": true,
+      "named_anonymous_annotations_identical": true,
+      "input_hashes_unchanged": true
+    },
+    "workspace_full_generation": {
+      "python_isolated_mode": false,
+      "scope": "Both sample families, both axis scales, capped and full views",
+      "anonymous_variants": 8,
+      "named_variants": 8,
+      "formats": ["png", "svg", "pdf"],
+      "software": {"numpy": "2.5.0", "pandas": "3.0.3", "matplotlib": "3.11.0"},
+      "pre_averages_included": true,
+      "static_and_event_shapes_distinguished": true,
+      "named_anonymous_numerical_tables_identical": true,
+      "input_hashes_unchanged": true,
+      "visual_review": "Capped TWFE-SE figures for both sample families and both presentations inspected successfully"
+    },
+    "anonymous_writeup_assets": {
+      "figures": 2,
+      "formats": ["pdf", "pgf"],
+      "pixel_match_to_generated_png": true,
+      "pdf_privacy_checks_passed": true
+    }
   },
   "source_export_audit": {
-    "comparison_rows": 1332,
-    "pooled_pre_records": 265,
-    "covariance_blocks": 23,
-    "coordinate_count": 2829,
+    "studies": 24,
+    "specifications": 351,
+    "comparison_rows": 1396,
+    "pooled_pre_records": 393,
+    "available_pooled_pre_records": 138,
+    "covariance_blocks": 25,
+    "coordinate_count": 2957,
     "draws_per_block": 999,
     "point_and_draw_arrays_unchanged": true,
     "maximum_pair_inference_error": 2.220446049250313e-16
+  },
+  "historical_preservation_audit": {
+    "reference_release": "v0.2.0",
+    "identity_matching": "DOI and source specification identifiers; chronological anonymous renumbering permitted",
+    "treatment_comparison_rows_unchanged": 1332,
+    "paired_pre_rows_unchanged": 88,
+    "pooled_pre_records_unchanged": 265,
+    "old_covariance_blocks_bitwise_identical": 23,
+    "point_draw_and_covariance_arrays_checked": true,
+    "no_stale_covariance_archives": true,
+    "voter_id_specifications_share_one_112_coordinate_999_draw_block": true
   },
   "pre_comparison_audit": {
     "pairs": 88,
@@ -34,10 +71,13 @@
     "studies": 5,
     "all_pass_hard_screen": true,
     "maximum_point_reconstruction_error": 8.01879396217231e-13,
-    "original_numerical_files_unchanged": 30,
-    "covariance_archives_unchanged": 23,
-    "independent_synthetic_adjoint_checks": 36,
-    "independent_munoz_random_outcome_checks": 32
+    "current_treatment_and_covariance_files_unchanged_during_pre_export": 32,
+    "current_covariance_archives_unchanged_during_pre_export": 25,
+    "inherited_original_pre_validation": {
+      "independent_synthetic_adjoint_checks": 36,
+      "independent_munoz_random_outcome_checks": 32,
+      "rerun_this_refresh": false
+    }
   },
   "scope_checks": {
     "study_names_permitted_in_provenance": true,
@@ -50,6 +90,7 @@
   "limitations": [
     "Validation reproduces saved-estimate figures, not upstream observation-level estimation.",
     "Cross-block covariance is unavailable, not zero.",
-    "Public redistribution license remains undecided; private GitHub upload is authorized."
+    "The GitHub repository is public; public visibility does not establish a reuse license. LICENSE.md is unchanged and the license remains undecided.",
+    "The separate private observation-level v1 archive remains the historical 22-study snapshot; it was not expanded by this estimate-level refresh."
   ]
 }

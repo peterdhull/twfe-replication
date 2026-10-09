@@ -30,7 +30,7 @@ def json_clean(value):
     return value
 
 
-def run(root, output, scale="both", view="both", summaries="all"):
+def run(root, output, scale="both", view="both", summaries="all", named=False):
     root = Path(root).resolve()
     output = Path(output)
     if not output.is_absolute():
@@ -39,6 +39,8 @@ def run(root, output, scale="both", view="both", summaries="all"):
     input_files = [root / "data/results/comparisons.csv", root / "data/results/studies.csv",
                    root / "config/screen.json", root / "config/figures.json",
                    root / "data/results/pre_comparisons.csv"]
+    if named:
+        input_files.append(root / "data/provenance/studies.csv")
     protected = {str(p.relative_to(root)).replace("\\", "/"): sha256(p) for p in input_files}
     data = pd.read_csv(input_files[0], float_precision="round_trip")
     pre = pd.read_csv(input_files[4], float_precision="round_trip")
@@ -52,6 +54,12 @@ def run(root, output, scale="both", view="both", summaries="all"):
     elif summaries != "all":
         raise ValueError("Unknown summary selection")
     studies = pd.read_csv(input_files[1])
+    if named:
+        names = pd.read_csv(input_files[5])
+        required = ["study_id", "short_title", "short_citation", "source_url"]
+        if not set(required).issubset(names.columns):
+            raise ValueError("Named figures require public bibliographic provenance")
+        studies = studies.merge(names[required], on="study_id", how="left", validate="one_to_one", sort=False)
     policy = json.loads(input_files[2].read_text(encoding="utf-8-sig"))
     figure_config = json.loads(input_files[3].read_text(encoding="utf-8-sig"))
     if set(data.family) != {"baseline", "aligned_samples"}:
@@ -105,7 +113,7 @@ def run(root, output, scale="both", view="both", summaries="all"):
                 is_capped = perspective == "capped"
                 destination = output / unit / f"{family}_{perspective}"
                 checks = render(frame, studies, capped_bounds if is_capped else full_bounds,
-                                destination, unit, is_capped, source_pairs, policy, figure_config)
+                                destination, unit, is_capped, source_pairs, policy, figure_config, named=named)
                 figures[unit][family][perspective] = checks
                 for check in checks:
                     expected = summaries.loc[(summaries.family == family)
@@ -138,6 +146,8 @@ def run(root, output, scale="both", view="both", summaries="all"):
                   paired_variance_identity_checked=True,
                   direct_difference_se_used_to_avoid_covariance_cancellation=True,
                   inputs_unchanged=True)
+    if named:
+        report["presentation"] = "named"
     (output / "validation.json").write_text(json.dumps(json_clean(report), indent=2, allow_nan=False),
                                             encoding="utf-8")
     print(json.dumps({"status": "PASS", "output": str(output),
@@ -149,13 +159,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[2],
                         help="Repository root (default: this source checkout)")
-    parser.add_argument("--output", type=Path, default=Path("outputs"), help="Output directory, relative to root unless absolute")
+    parser.add_argument("--output", type=Path, help="Output directory, relative to root unless absolute (default: outputs, or outputs/named with --named)")
+    parser.add_argument("--named", action="store_true", help="Use public short titles and citations in the study legend")
     parser.add_argument("--scale", choices=("twfe-se", "outcome-sd", "both"), default="both")
     parser.add_argument("--view", choices=("capped", "full", "both"), default="both")
     parser.add_argument("--summaries", choices=("all", "treatment", "pre"), default="all",
                         help="Include scalar/post and separate pre averages (default), or a subset")
     arguments = parser.parse_args()
-    run(arguments.root, arguments.output, arguments.scale, arguments.view, arguments.summaries)
+    output = arguments.output if arguments.output is not None else Path("outputs/named" if arguments.named else "outputs")
+    run(arguments.root, output, arguments.scale, arguments.view, arguments.summaries, named=arguments.named)
 
 
 if __name__ == "__main__":

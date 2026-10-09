@@ -102,86 +102,102 @@
       "covariance_block_id": "S12-B01",
       "study_id": 12,
       "file": "data/covariance/S12-B01.npz",
-      "coordinates": 24,
+      "coordinates": 112,
       "draws": 999,
-      "sha256": "e74f972d8527ca943b9c8adb6c744ad8c87ea2bd7d76b058013b7245cf84be92"
+      "sha256": "9f097274721eef285ec3f24b6227fbe65436e7214290449546d7e795798e8973"
     },
     {
       "covariance_block_id": "S13-B01",
       "study_id": 13,
       "file": "data/covariance/S13-B01.npz",
-      "coordinates": 22,
+      "coordinates": 24,
       "draws": 999,
-      "sha256": "c7d929c47c93ea9fc439896cac2e6baa00f20591bbba6c1aad2093f95d6d40b3"
+      "sha256": "e74f972d8527ca943b9c8adb6c744ad8c87ea2bd7d76b058013b7245cf84be92"
     },
     {
       "covariance_block_id": "S14-B01",
       "study_id": 14,
       "file": "data/covariance/S14-B01.npz",
-      "coordinates": 24,
+      "coordinates": 16,
       "draws": 999,
-      "sha256": "51a9f1591926940273f58949618d210108a95ce0ed9a0ef8b195530f95bc8be1"
+      "sha256": "92a51c7916f77a3c226b85cba38a9f35dd4357aac77e90eae4fc5adb2675a103"
     },
     {
       "covariance_block_id": "S15-B01",
       "study_id": 15,
       "file": "data/covariance/S15-B01.npz",
-      "coordinates": 16,
+      "coordinates": 22,
       "draws": 999,
-      "sha256": "16c6fb1727c41c2aa6771fc12820e43b5fe0b26a8b4e068a7067f49892c4d1c8"
+      "sha256": "c7d929c47c93ea9fc439896cac2e6baa00f20591bbba6c1aad2093f95d6d40b3"
     },
     {
       "covariance_block_id": "S16-B01",
       "study_id": 16,
       "file": "data/covariance/S16-B01.npz",
-      "coordinates": 93,
+      "coordinates": 24,
       "draws": 999,
-      "sha256": "a41fcbc688a8e907fc5ae41d821e6207f495b5603c2ad99bf462c0a9a63ae61f"
+      "sha256": "51a9f1591926940273f58949618d210108a95ce0ed9a0ef8b195530f95bc8be1"
     },
     {
       "covariance_block_id": "S17-B01",
       "study_id": 17,
       "file": "data/covariance/S17-B01.npz",
-      "coordinates": 172,
+      "coordinates": 16,
       "draws": 999,
-      "sha256": "b16075048654344ff71a8c2f075a6a339491b6cf8059782e9a0f4cf0aac241e0"
+      "sha256": "16c6fb1727c41c2aa6771fc12820e43b5fe0b26a8b4e068a7067f49892c4d1c8"
     },
     {
       "covariance_block_id": "S18-B01",
       "study_id": 18,
       "file": "data/covariance/S18-B01.npz",
-      "coordinates": 108,
+      "coordinates": 93,
       "draws": 999,
-      "sha256": "47ba5ab11eb6d8c0c4927edc9e3a0c1c4709c289b42381050cc72fde6ceb5d84"
+      "sha256": "a41fcbc688a8e907fc5ae41d821e6207f495b5603c2ad99bf462c0a9a63ae61f"
     },
     {
       "covariance_block_id": "S19-B01",
       "study_id": 19,
       "file": "data/covariance/S19-B01.npz",
-      "coordinates": 144,
+      "coordinates": 172,
       "draws": 999,
-      "sha256": "0322c34b6e2aadf3b1397e26c9019291931636437fe18a17956c83b48ca729d7"
+      "sha256": "b16075048654344ff71a8c2f075a6a339491b6cf8059782e9a0f4cf0aac241e0"
     },
     {
       "covariance_block_id": "S20-B01",
       "study_id": 20,
       "file": "data/covariance/S20-B01.npz",
-      "coordinates": 12,
+      "coordinates": 108,
       "draws": 999,
-      "sha256": "f54e7693e60b0d6be772f4cfac47fec1a7237c1540718ec63aea4f4aa38191e3"
+      "sha256": "47ba5ab11eb6d8c0c4927edc9e3a0c1c4709c289b42381050cc72fde6ceb5d84"
     },
     {
       "covariance_block_id": "S21-B01",
       "study_id": 21,
       "file": "data/covariance/S21-B01.npz",
-      "coordinates": 67,
+      "coordinates": 144,
       "draws": 999,
-      "sha256": "fc1687cc71903b74101e34e6310eead6c4110b4e5888ec83aca3fcd078ceb691"
+      "sha256": "0322c34b6e2aadf3b1397e26c9019291931636437fe18a17956c83b48ca729d7"
     },
     {
       "covariance_block_id": "S22-B01",
       "study_id": 22,
       "file": "data/covariance/S22-B01.npz",
+      "coordinates": 12,
+      "draws": 999,
+      "sha256": "f54e7693e60b0d6be772f4cfac47fec1a7237c1540718ec63aea4f4aa38191e3"
+    },
+    {
+      "covariance_block_id": "S23-B01",
+      "study_id": 23,
+      "file": "data/covariance/S23-B01.npz",
+      "coordinates": 67,
+      "draws": 999,
+      "sha256": "fc1687cc71903b74101e34e6310eead6c4110b4e5888ec83aca3fcd078ceb691"
+    },
+    {
+      "covariance_block_id": "S24-B01",
+      "study_id": 24,
+      "file": "data/covariance/S24-B01.npz",
       "coordinates": 540,
       "draws": 999,
       "sha256": "9e0e6c85dda24c30fc3e18ace887fc56005687fd619be23bb0d92215d670ea4e"

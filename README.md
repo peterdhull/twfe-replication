@@ -35,6 +35,18 @@ python reproduce.py --scale twfe-se --view capped
 The default includes both treatment summaries and pre averages. Use
 `--summaries treatment` or `--summaries pre` to show just one set.
 
+For companion figures labeled with study short titles and smaller publication
+citations, use:
+
+```sh
+python reproduce.py --named
+```
+
+The named figures are written under `outputs/named/` by default. They use the
+same estimates, screening, colors, chronological four-column legend, and
+annotation counts as the anonymized figures. `--output` selects another output
+directory for either presentation.
+
 The Python entry point also supports `python -m didfigures` after installing
 the local package with `python -m pip install --no-deps -e .`.
 
@@ -42,14 +54,14 @@ the local package with `python -m pip install --no-deps -e .`.
 
 | Item | Coverage |
 | --- | --- |
-| Implemented specifications | 335 across 22 studies |
-| Treatment estimates before screening | 331 CSA and 335 BJS pairs per sample family |
-| Retained treatment estimates | 241 CSA and 266 BJS pairs per family |
-| Retained figures including pre averages | 263 CSA and 288 BJS pairs per family |
-| Retained study/specification union | 20 studies, 275 specifications |
+| Implemented specifications | 351 across 24 studies |
+| Treatment estimates before screening | 347 CSA and 351 BJS pairs per sample family |
+| Retained treatment estimates | 251 CSA and 275 BJS pairs per family |
+| Retained figures including pre averages | 273 CSA and 297 BJS pairs per family |
+| Retained study/specification union | 22 studies, 285 specifications |
 | Event-study treatment summaries | 28 pooled post-treatment averages |
 | Additional available pre summaries | 22 across five studies, 22 CSA and 22 BJS pairs per family |
-| Other treatment summaries | 307 scalar specifications before screening |
+| Other treatment summaries | 323 scalar specifications before screening |
 | Joint inference | 999 positive-weight bootstrap draws in each declared block |
 
 Event studies enter as separate pre- and post-treatment averages, not once per
@@ -59,8 +71,16 @@ applying the same screen separately to each pooled contrast. Circles identify
 static specifications; squares identify both kinds of event-study averages.
 The exact combined and pre-only counts are in
 `reference/expected_summary.json`, and generated annotation tables break out
-static, pre, and post summaries separately. The old treatment-only counts
-remain frozen in `reference/treatment_only_summary.json`.
+static, pre, and post summaries separately. The treatment-only counts for this
+release are frozen separately in `reference/treatment_only_summary.json`.
+
+Version 0.3.0 adds two banking specifications from Colonnelli and Prem's
+*Corruption and Firms* (RESTUD, 2022) and fourteen public-source specifications
+from Cantoni and Pons's *Strict ID Laws Don't Stop Voters* (QJE, 2021).
+Both additions contain static targets. All existing pre averages are retained;
+the additions create no event-study vectors or pre averages. Public numerical
+tables include screen-excluded pairs, and the named provenance gives their
+source table/column labels, recorded controls, fixed effects, and clustering.
 
 All scalar estimates and their SEs are saved in the common original-sample
 outcome-SD scale. The TWFE-SE presentation divides both plotted estimates by
@@ -102,11 +122,16 @@ with a pointwise normal threshold of 1.96. Warning-marked points are retained as
 crosses and cannot be filled. No multiplicity adjustment is applied. The
 concentration screen is a design diagnostic, not a guarantee of valid inference.
 
-Stable study and specification IDs link numerical tables to the named public
+Study and specification IDs link numerical tables to the named public
 provenance in `data/provenance/`. The default figures retain their
 anonymized labels. Original files, private correspondence, local source paths,
 and private acquisition links are not included. Missing descriptive metadata
 are left blank rather than inferred.
+
+Study numbers follow journal publication year, with the source registry order
+breaking ties. They are stable across views within this release; adding papers
+in an earlier publication year can renumber later studies between releases.
+Use DOI links and source specification labels when comparing releases.
 
 ## Figure assets and manuscript status
 
